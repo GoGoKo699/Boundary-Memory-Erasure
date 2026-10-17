@@ -357,20 +357,25 @@ The integral exists and is positive definite. Its exact entries and trace yield 
 
 ```math
 {
-\begin{aligned}
 (X_\gamma)_{jk}
-&=
+=
 (L+1-k)\left[
 \dfrac j\gamma+\dfrac{\gamma(j-1)}{4J^2}
 \right],
-&&j,k\text{ have the same parity},\\
-(X_\gamma)_{jk}
-&=
-\dfrac{i(L+1-k)}{2J},
-&&j<k\text{ have opposite parity}.
-\end{aligned}
+\qquad
+j,k\text{ have the same parity},
 }
 \tag{T2.2}
+```
+
+```math
+{
+(X_\gamma)_{jk}
+=
+\dfrac{i(L+1-k)}{2J},
+\qquad
+j<k\text{ have opposite parity}.
+}
 ```
 
 The lower triangle is the Hermitian conjugate. In particular,
