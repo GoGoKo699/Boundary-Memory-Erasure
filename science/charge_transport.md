@@ -374,7 +374,7 @@ j,k\text{ have the same parity},
 =
 \dfrac{i(L+1-k)}{2J},
 \qquad
-j<k\text{ have opposite parity}.
+j < k\text{ have opposite parity}.
 }
 ```
 
