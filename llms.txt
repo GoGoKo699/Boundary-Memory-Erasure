@@ -1,0 +1,44 @@
+# Boundary Memory Erasure
+
+This repository studies information erasure through one endpoint of a fixed coherent no-passing qutrit chain. Its complete scientific account is organized by topic under science/.
+
+## Story route
+
+- README.md: scientific question, principal results, direct reading and reproduction routes.
+- science/overview.md: exact result domains and how their proofs fit together.
+- science/model.md: Hamiltonian, control classes, reservoir rates, target states, half trace and half diamond distance.
+- science/interpretation.md: physical mechanism, analytical filling regimes, and a two-site worked example.
+
+## Theorem and proof route
+
+- science/control_obstruction.md: U1, the rank-two physical current and local population inequality; U2, the exponential local-memory bound for every unital endpoint system protocol.
+- science/charge_transport.md: T1, exact charge reduction for arbitrary input under spin-independent loss and gain; invariant mixed-word reconstruction and Gaussian covariance; T2, explicit Lyapunov Gramian and geometric survival estimate.
+- science/erasure_protocol.md: E1, predetermined pure loss followed by unbiased refill; complete reference decoupling, error allocation, and polynomial time.
+- science/vacuum_accessibility.md: V1, stationary-state reversal, physical spin degeneracies, and the exact minimum eigenvalue of the vacuum effect.
+- science/channel_mixing.md: M1, CP minorization for number-diagonal inputs plus complete contraction of every nonzero charge-difference sector.
+- science/reservoir_threshold.md: F1, matching fixed-filling exponential rate; F2, necessary-and-sufficient polynomial filling scale for bounded open-loop reservoir schedules.
+- science/resources.md: R1, temporary min-entropy deficit and actual prefix-channel nonuniformity; R2, accumulated memoryless channel budget and its Dmax/robustness identity; R3, independent finite-controller resource.
+
+## Scientific distinctions to preserve
+
+The physical injection rate of each spin is alpha/2. Total charge gain is alpha=gamma p, occupied-spin loss is beta=gamma(1-p), and gamma=alpha+beta.
+
+The unital lower bound uses the same nearly maximally mixed product input against every endpoint system protocol and is witnessed at the last site. The filling converse uses a fully occupied all-up input and a full-chain rightmost-spin projector. Do not interchange their input or control quantifiers.
+
+Charge reduction is exact for arbitrary physical inputs after the proof-only number pinch. Reconstructing the full physical state from its charge state requires the separately stated mixed-word family. Gaussian charge calculations for a known input do not assume an arbitrary physical input is Gaussian.
+
+The erasure target is pi=I/3^L. A constant bath of filling p converges to Pi_p; the one-switch protocol first erases into a dilute state and then reaches pi. Reference decoupling uses half diamond distance.
+
+Hamiltonian reversal and number twirling are proof devices. The implemented bath schedule uses neither, and has no monitoring, postselection, or feedback. The filling iff applies to the stated open-loop spin-independent bath class. The unital theorem does not silently include a retained pure controller, which is separately counted in R3.
+
+The fixed-p exponential rate and the polynomial threshold are sharp. The polynomial prefactor is an upper-bound quantity. The resource theorem concerns the largest eigenvalue and a specified controller, not an unconditional von Neumann entropy, heat, or work cost.
+
+## Attribution and reproduction
+
+- references/related_work.md: established ordered-spin memory, bottlenecks, local preparation, reservoir detours, classical renewal, and channel-resource/contraction tools, with their relation to this contribution.
+- references/references.bib: structured primary-source bibliography, retaining inspected version information.
+- verification/README.md: commands, tested environment, finite domains, tolerances, and interpretation.
+- verification/run_all.py: run all finite matrix checks.
+- verification/results.json: recorded numerical outputs. These support bookkeeping identities; the scientific pages provide the universal proofs.
+
+Contact: Ruge Lin, gogoko699@gmail.com.
