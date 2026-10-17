@@ -25,7 +25,7 @@ A_\gamma=-ih-\frac\gamma2 P_1,
 
 ```math
 T_L(\gamma)
-=\int_0^\infty\operatorname{Tr}\!\left(G_\gamma(t)^\dagger G_\gamma(t)\right)dt
+=\int_0^\infty\mathrm{Tr}\!\left(G_\gamma(t)^\dagger G_\gamma(t)\right)dt
 =\frac{L(L+1)(L+2)}{6\gamma}
 +\frac{\gamma L(L^2-1)}{24J^2}.
 ```
@@ -35,9 +35,11 @@ T_L(\gamma)
 For every $`t\geq0`$, the exact minimum eigenvalue of the physical vacuum effect is
 
 ```math
+{
 \boxed{
 \lambda_{\min}\!\left(E_{p,t}^*(P_{\mathrm{vac}})\right)
 =(1-p)^L\det\!\left[I-G_\gamma(t)^\dagger G_\gamma(t)\right].
+}
 }
 \tag{V1}
 ```
@@ -62,7 +64,7 @@ Thus every physical input has vacuum probability at least $`q_p`$ after the same
 The stationary state is
 
 ```math
-\Pi_p=\bigotimes_{j=1}^L\operatorname{diag}(1-p,p/2,p/2)
+\Pi_p=\bigotimes_{j=1}^L\mathrm{diag}(1-p,p/2,p/2)
 =(1-p)^L\zeta^N,
 \qquad \zeta=\frac{p}{2(1-p)}.
 ```
@@ -182,7 +184,7 @@ This proves V1. The fully occupied charge sector attains the minimum, independen
 Let
 
 ```math
-f_\gamma(t)=\operatorname{Tr}\!\left(G_\gamma(t)^\dagger G_\gamma(t)\right).
+f_\gamma(t)=\mathrm{Tr}\!\left(G_\gamma(t)^\dagger G_\gamma(t)\right).
 ```
 
 Dissipativity makes $`f_\gamma`$ nonincreasing. Its exact integral implies

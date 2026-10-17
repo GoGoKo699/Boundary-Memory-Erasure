@@ -75,7 +75,7 @@ X_\gamma=
 Direct multiplication gives $`A_\gamma^\dagger X_\gamma+X_\gamma A_\gamma=-I`$, and
 
 ```math
-T_2(\gamma)=\operatorname{Tr}X_\gamma
+T_2(\gamma)=\mathrm{Tr}X_\gamma
 =\frac4\gamma+\frac\gamma{4J^2}.
 ```
 
@@ -91,7 +91,7 @@ With $`J=\gamma=1`$, the survival-block length is $`2T_2=8.5`$. For $`\varepsilo
 
 The sufficient total time is therefore $`119`$. These are deliberately uniform proof bounds, with different purposes from an optimal finite-size control calculation. Their gap at $`L=2`$ does not contradict the asymptotic exponential-versus-polynomial comparison.
 
-For illustration of the filling constant, take $`p=1/4`$ in the same two-site chain. The stationary vacuum weight is $`9/16`$, and V1 guarantees vacuum probability at least $`9/32`$ from every input after one interval of length $`8.5`$. The intermediate stationary state is $`\operatorname{diag}(3/4,1/8,1/8)^{\otimes2}`$. The protocol may first erase into that state and then refill to the uniform target; it need not prepare a nearly empty chain.
+For illustration of the filling constant, take $`p=1/4`$ in the same two-site chain. The stationary vacuum weight is $`9/16`$, and V1 guarantees vacuum probability at least $`9/32`$ from every input after one interval of length $`8.5`$. The intermediate stationary state is $`\mathrm{diag}(3/4,1/8,1/8)^{\otimes2}`$. The protocol may first erase into that state and then refill to the uniform target; it need not prepare a nearly empty chain.
 
 ## What is sharp, and what the resources mean
 

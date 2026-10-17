@@ -2,7 +2,7 @@
 
 A lower bound on vacuum probability does not by itself identify how quantum coherences decay. This page gives the additional channel argument needed for the reservoir in [the model](model.md). It controls arbitrary reference systems and separates the number-diagonal component from coherences between different particle numbers.
 
-Write $`\mathcal R_\sigma(X)=\sigma\operatorname{Tr}X`$ for the replacement channel. The channel error is always the half-diamond distance $`\tfrac12\|\Phi-\mathcal R_\sigma\|_\diamond`$.
+Write $`\mathcal R_\sigma(X)=\sigma\mathrm{Tr}X`$ for the replacement channel. The channel error is always the half-diamond distance $`\tfrac12\|\Phi-\mathcal R_\sigma\|_\diamond`$.
 
 ## Theorem M1
 
@@ -16,10 +16,12 @@ Let $`\mathcal H=\bigoplus_{m=0}^L\mathcal H_m`$ be a finite-dimensional Hilbert
 Then for every integer $`n\geq1`$,
 
 ```math
+{
 \boxed{
 \frac12\|E^n-\mathcal R_\Pi\|_\diamond
 \leq(1-q)^n+L(1-q)^{n/2}
 \leq(L+1)e^{-qn/2}.
+}
 }
 \tag{M1}
 ```
@@ -49,18 +51,18 @@ Let $`B=E^*(P_{\mathrm{vac}})`$. Since the vacuum projector is number invariant,
 
 ```math
 P_{\mathrm{vac}}F(X)P_{\mathrm{vac}}
-=P_{\mathrm{vac}}\operatorname{Tr}(BX).
+=P_{\mathrm{vac}}\mathrm{Tr}(BX).
 ```
 
 There are no vacuum-to-nonvacuum output blocks. With $`Q=I-P_{\mathrm{vac}}`$, this gives the exact decomposition
 
 ```math
 F(X)-q\mathcal R_{P_{\mathrm{vac}}}(X)
-=P_{\mathrm{vac}}\operatorname{Tr}\!\left[(B-qI)X\right]
+=P_{\mathrm{vac}}\mathrm{Tr}\!\left[(B-qI)X\right]
 +QF(X)Q.
 ```
 
-Both terms on the right are completely positive: $`B-qI\geq0`$ defines a positive scalar functional, and compression of a CP map is CP. Their sum has trace $`(1-q)\operatorname{Tr}X`$. Thus
+Both terms on the right are completely positive: $`B-qI\geq0`$ defines a positive scalar functional, and compression of a CP map is CP. Their sum has trace $`(1-q)\mathrm{Tr}X`$. Thus
 
 ```math
 F=q\mathcal R_{P_{\mathrm{vac}}}+(1-q)S
@@ -79,7 +81,7 @@ F^n-\mathcal R_\Pi
 For the last equality, $`\mathrm{id}-\mathcal R_\Pi`$ produces trace-zero operators, every trace-preserving map preserves that property, and a replacement channel annihilates them. After tensoring with an arbitrary reference $`R`$, the same reasoning uses zero partial trace over the system:
 
 ```math
-\operatorname{Tr}_S
+\mathrm{Tr}_S
 \!\left[((\mathrm{id}-\mathcal R_\Pi)\otimes\mathrm{id}_R)(X_{SR})\right]
 =0.
 ```
@@ -145,7 +147,7 @@ Each $`\mathcal P_d`$ is completely contractive in operator norm: it is an avera
 \qquad\mathcal P_0=\mathcal D_N.
 ```
 
-The adjoint replacement map is $`\mathcal R_\Pi^*(X)=I\operatorname{Tr}(\Pi X)`$. Since $`[N,\Pi]=0`$, it vanishes on every nonzero charge-difference component. Covariance then yields
+The adjoint replacement map is $`\mathcal R_\Pi^*(X)=I\mathrm{Tr}(\Pi X)`$. Since $`[N,\Pi]=0`$, it vanishes on every nonzero charge-difference component. Covariance then yields
 
 ```math
 (E^n-\mathcal R_\Pi)^*

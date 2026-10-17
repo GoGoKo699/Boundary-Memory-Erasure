@@ -32,11 +32,13 @@ P_\infty(\rho)=\log d-H_{\min}(\rho)
 **Result R1.** Every endpoint protocol satisfying the stated local success condition obeys
 
 ```math
+{
 \boxed{
 \int_0^T\|\rho_t\|_\infty\,dt\geq\frac{\delta}{J},
 \qquad
 \sup_{0\leq t\leq T}\|\rho_t\|_\infty
 \geq\frac{\delta}{JT}.
+}
 }
 \tag{R1}
 ```
@@ -111,9 +113,11 @@ Suppose a controller and all supplied environmental states have a fixed initiali
 Combining this with R1 yields
 
 ```math
+{
 \boxed{
 \sup_{0\leq t\leq T}\log\|\Phi_t(I_{d_S})\|_\infty
 \geq(L-1)\log3-\log\frac{JT}{\delta}.
+}
 }
 \tag{R1a}
 ```
@@ -139,8 +143,10 @@ B(t)=\sum_{k:t_k\leq t}b(\mathcal E_k).
 Local randomization to error $`\varepsilon`$ requires
 
 ```math
+{
 \boxed{
 B(T)\geq(L-1)\log3-\log\frac{JT}{\delta}.
+}
 }
 \tag{R2}
 ```
@@ -152,7 +158,7 @@ The bound is necessary; it is not a sufficient criterion for fast erasure.
 Let $`A`$ be the channel input and let $`B`$ be any finite idle ancillary system. For every state $`\rho_{AB}`$, positivity implies
 
 ```math
-(\mathcal E\otimes\operatorname{id}_B)(\rho_{AB})
+(\mathcal E\otimes\mathrm{id}_B)(\rho_{AB})
 \leq\|\rho_{AB}\|_\infty\,
 \mathcal E(I_d)\otimes I_B.
 ```
@@ -160,7 +166,7 @@ Let $`A`$ be the channel input and let $`B`$ be any finite idle ancillary system
 Taking operator norms gives
 
 ```math
-\|(\mathcal E\otimes\operatorname{id}_B)(\rho_{AB})\|_\infty
+\|(\mathcal E\otimes\mathrm{id}_B)(\rho_{AB})\|_\infty
 \leq e^{b(\mathcal E)}\|\rho_{AB}\|_\infty.
 ```
 
@@ -170,7 +176,7 @@ Input and output dimensions agree, so the corresponding increase of $`P_\infty`$
 b(\mathcal E)
 =\sup_{B,\rho_{AB}}
 \left\{
-P_\infty\bigl[(\mathcal E\otimes\operatorname{id}_B)(\rho_{AB})\bigr]
+P_\infty\bigl[(\mathcal E\otimes\mathrm{id}_B)(\rho_{AB})\bigr]
 -P_\infty(\rho_{AB})
 \right\}.
 ```
@@ -246,7 +252,7 @@ is positive and has trace one. Define
 \mathcal F=\frac{\mathcal E}{\lambda}
 +\left(1-\frac1\lambda\right)\mathcal R_\tau,
 \qquad
-\mathcal R_\tau(X)=\tau\operatorname{Tr}X.
+\mathcal R_\tau(X)=\tau\mathrm{Tr}X.
 ```
 
 This convex combination is CPTP. Direct evaluation gives $`\mathcal F(I_d)=I_d`$, and
@@ -316,9 +322,11 @@ Allow arbitrary unital CPTP operations on site $`1`$ together with the controlle
 **Result R3.** Local randomization to error $`\varepsilon`$ requires
 
 ```math
+{
 \boxed{
 T K\|\sigma_C\|_\infty
 \geq\frac{3^{L-1}}{J}\left(\frac13-\varepsilon\right).
+}
 }
 \tag{R3}
 ```
@@ -346,7 +354,7 @@ All subsequent joint dynamics is unital, so positivity preserves this domination
 \begin{aligned}
 p_\downarrow(L,T)
 &\leq\int_0^T
-\left|\operatorname{Tr}\bigl[(C_Q\otimes I_C)\rho_{SC}(t)\bigr]\right|\,dt\\
+\left|\mathrm{Tr}\bigl[(C_Q\otimes I_C)\rho_{SC}(t)\bigr]\right|\,dt\\
 &\leq\frac{JT}{r}K\|\sigma_C\|_\infty.
 \end{aligned}
 ```

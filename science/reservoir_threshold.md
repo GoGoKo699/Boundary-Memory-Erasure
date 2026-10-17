@@ -13,7 +13,7 @@ Throughout, the [model](model.md) has the fixed hopping-only Hamiltonian $`H`$ w
 The total injection $`\alpha`$ is divided equally between the two spins. An occupied spin is lost at rate $`\beta`$. For constant parameters, let $`E_{p,t}=e^{t\mathcal L_{H,p}}`$ and
 
 ```math
-\Pi_p=\bigotimes_{j=1}^L\operatorname{diag}(1-p,p/2,p/2),
+\Pi_p=\bigotimes_{j=1}^L\mathrm{diag}(1-p,p/2,p/2),
 \qquad\pi=\Pi_{2/3}=I/3^L.
 ```
 
@@ -52,10 +52,12 @@ T_L(\gamma)
 Consequently, for fixed $`p\in(0,2/3]`$ and fixed $`J,\gamma>0`$,
 
 ```math
+{
 \boxed{
 \lim_{L\to\infty}\frac1L
 \log\!\left(\gamma t_{\mathrm{mix}}^{\diamond}(\varepsilon;p,L)\right)
 =-\log(1-p).
+}
 }
 \tag{F1}
 ```
@@ -116,7 +118,7 @@ For a gauge-invariant fermionic Gaussian state, the probability that a set of si
 Since the sole-up-at-site-1 projector is bounded by the empty-tail projector,
 
 ```math
-\frac{d}{dt}\operatorname{Tr}(P_\uparrow\rho_t)
+\frac{d}{dt}\mathrm{Tr}(P_\uparrow\rho_t)
 \geq-\beta(1-p)^{L-1}
 =-\gamma(1-p)^L.
 ```
@@ -124,7 +126,7 @@ Since the sole-up-at-site-1 projector is bounded by the empty-tail projector,
 The initial expectation is one. Spin symmetry of $`\Pi_p`$ gives
 
 ```math
-\operatorname{Tr}(P_\uparrow\Pi_p)
+\mathrm{Tr}(P_\uparrow\Pi_p)
 =\frac{1-(1-p)^L}{2}.
 ```
 
@@ -132,7 +134,7 @@ Using the variational characterization of trace distance,
 
 ```math
 D(\rho_t,\Pi_p)
-\geq\operatorname{Tr}\!\left[P_\uparrow(\rho_t-\Pi_p)\right]
+\geq\mathrm{Tr}\!\left[P_\uparrow(\rho_t-\Pi_p)\right]
 \geq\frac{1+(1-p)^L}{2}-\gamma t(1-p)^L.
 ```
 
@@ -159,10 +161,12 @@ A family of such schedules achieves
 in time polynomial in $`L`$ if and only if
 
 ```math
+{
 \boxed{
 L\log\frac1{1-p_L}=O(\log L)
 \quad\Longleftrightarrow\quad
 Lp_L=O(\log L).
+}
 }
 \tag{F2}
 ```

@@ -20,15 +20,17 @@ Let $`Q`$ be the projector onto basis configurations whose rightmost occupied sp
 R_\downarrow=I_{1,\ldots,L-1}\otimes
 |\downarrow\rangle\langle\downarrow|_L,
 \qquad
-p_\downarrow(L,t)=\operatorname{Tr}(R_\downarrow\rho_t).
+p_\downarrow(L,t)=\mathrm{Tr}(R_\downarrow\rho_t).
 ```
 
 **Result U1.** For arbitrary trace-preserving endpoint channels, including nonunital channels, interspersed with the fixed bulk evolution,
 
 ```math
+{
 \boxed{
 p_\downarrow(L,T)
 \leq J\int_0^T\|\rho_t\|_\infty\,dt.
+}
 }
 \tag{U1}
 ```
@@ -40,16 +42,16 @@ The same inequality holds with simultaneous local Hamiltonian or local Lindblad 
 For any CPTP map $`\mathcal E`$ on site $`1`$, trace preservation gives $`\mathcal E^*(I_3)=I_3`$. Since $`Q=I_3\otimes Q_{2,\ldots,L}`$,
 
 ```math
-(\mathcal E^*\otimes\operatorname{id})(Q)=Q.
+(\mathcal E^*\otimes\mathrm{id})(Q)=Q.
 ```
 
-An instantaneous endpoint pulse therefore leaves $`\operatorname{Tr}(Q\rho)`$ unchanged, regardless of whether the pulse is unital. A local Hamiltonian commutes with $`Q`$, while the adjoint of a trace-preserving local generator annihilates $`Q`$. Neither contributes directly to its continuous-time derivative.
+An instantaneous endpoint pulse therefore leaves $`\mathrm{Tr}(Q\rho)`$ unchanged, regardless of whether the pulse is unital. A local Hamiltonian commutes with $`Q`$, while the adjoint of a trace-preserving local generator annihilates $`Q`$. Neither contributes directly to its continuous-time derivative.
 
 Initially, every configuration in the support of $`\rho_0`$ has an up spin at site $`L`$. Hence
 
 ```math
 Q\rho_0=\rho_0,
-\qquad \operatorname{Tr}(Q\rho_0)=1.
+\qquad \mathrm{Tr}(Q\rho_0)=1.
 ```
 
 The rank of $`Q`$ is $`(3^L-3)/2`$: half the nonempty tail configurations have an up rightmost spin, and the first site has three independent states. The proof below uses its current rather than this rank.
@@ -74,20 +76,20 @@ C_Q:=i[H,Q]
 The nonzero eigenvalues are $`+J`$ and $`-J`$. Writing $`C_Q=C_+-C_-`$ for its positive and negative parts gives
 
 ```math
-\operatorname{Tr}C_+=\operatorname{Tr}C_-=J.
+\mathrm{Tr}C_+=\mathrm{Tr}C_-=J.
 ```
 
 For any density matrix $`\rho`$, positivity and $`\rho\leq\|\rho\|_\infty I`$ imply
 
 ```math
-0\leq\operatorname{Tr}(C_\pm\rho)
+0\leq\mathrm{Tr}(C_\pm\rho)
 \leq J\|\rho\|_\infty.
 ```
 
 Both numbers lie in the same interval of length $`J\|\rho\|_\infty`$, so their difference satisfies
 
 ```math
-|\operatorname{Tr}(C_Q\rho)|
+|\mathrm{Tr}(C_Q\rho)|
 \leq J\|\rho\|_\infty.
 ```
 
@@ -96,8 +98,8 @@ In particular, a factor of two from the full trace norm of $`C_Q`$ is unnecessar
 At every time of continuous evolution,
 
 ```math
-\frac{d}{dt}\operatorname{Tr}(Q\rho_t)
-=\operatorname{Tr}(C_Q\rho_t).
+\frac{d}{dt}\mathrm{Tr}(Q\rho_t)
+=\mathrm{Tr}(C_Q\rho_t).
 ```
 
 The endpoint terms vanish by the first part of the proof. Endpoint pulses produce no jumps in this expectation, so integrating uses the actual elapsed time under the fixed $`H`$.
@@ -115,8 +117,8 @@ Using the initial expectation of $`Q`$ and integrating its current,
 ```math
 \begin{aligned}
 p_\downarrow(L,T)
-&\leq 1-\operatorname{Tr}(Q\rho_T)\\
-&=-\int_0^T\operatorname{Tr}(C_Q\rho_t)\,dt\\
+&\leq 1-\mathrm{Tr}(Q\rho_T)\\
+&=-\int_0^T\mathrm{Tr}(C_Q\rho_t)\,dt\\
 &\leq J\int_0^T\|\rho_t\|_\infty\,dt.
 \end{aligned}
 ```
@@ -126,20 +128,22 @@ This proves U1.
 For a retained controller $`C`$, replace $`Q`$ by $`Q\otimes I_C`$. Every joint operation on site $`1`$ and $`C`$ fixes this observable in the Heisenberg picture. The current expectation is
 
 ```math
-\operatorname{Tr}\bigl[(C_Q\otimes I_C)\rho_{SC}(t)\bigr]
-=\operatorname{Tr}\bigl[C_Q\rho_t\bigr],
+\mathrm{Tr}\bigl[(C_Q\otimes I_C)\rho_{SC}(t)\bigr]
+=\mathrm{Tr}\bigl[C_Q\rho_t\bigr],
 ```
 
-so exactly the same proof yields U1 for the reduced state $`\rho_t=\operatorname{Tr}_C\rho_{SC}(t)`$. No assumption of unital reduced maps is needed for this statement.
+so exactly the same proof yields U1 for the reduced state $`\rho_t=\mathrm{Tr}_C\rho_{SC}(t)`$. No assumption of unital reduced maps is needed for this statement.
 
 ## U2. Exponential lower bound for unital endpoint control
 
 **Result U2.** Suppose the chain evolves through a sequence of CPTP endpoint maps satisfying $`\mathcal E_k(I_3)=I_3`$, with the fixed bulk Hamiltonian between them. Simultaneous time-dependent endpoint Hamiltonians and unital endpoint Lindblad generators are also allowed. Then
 
 ```math
+{
 \boxed{
 D\!\left(\rho_L(T),\frac{I_3}{3}\right)
 \geq \frac13-\frac{JT}{3^{L-1}}.
+}
 }
 \tag{U2}
 ```
@@ -147,9 +151,11 @@ D\!\left(\rho_L(T),\frac{I_3}{3}\right)
 In particular, for $`0\leq\varepsilon<1/3`$, reaching local error at most $`\varepsilon`$ requires
 
 ```math
+{
 \boxed{
 T\geq\frac{3^{L-1}}{J}
 \left(\frac13-\varepsilon\right).
+}
 }
 \tag{U2a}
 ```

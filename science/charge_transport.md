@@ -34,33 +34,39 @@ and an ordered word $`(s_1,\ldots,s_m)`$ with $`s_a\in\{\uparrow,\downarrow\}`$.
 This gives a unitary identification
 
 ```math
+{
 \mathcal H_{\mathrm{phys}}
 \cong
 \bigoplus_{m=0}^{L}
 \left(\wedge^m\mathbb C^L\right)\otimes\mathcal W_m,
 \qquad
 \mathcal W_m=(\mathbb C^2)^{\otimes m},
+}
 \tag{T1.1}
 ```
 
 with $`\mathcal W_0=\mathbb C`$. Write $`\mathcal F=\bigoplus_m\wedge^m\mathbb C^L`$ for the spinless charge Fock space, and let $`c_j`$ be its canonical fermionic annihilation operators. The one-particle hopping matrix and its second quantization are
 
 ```math
+{
 h=J\sum_{j=1}^{L-1}
 \left(|j\rangle\langle j+1|+|j+1\rangle\langle j|\right),
 \qquad
 H_{\mathrm{ch}}=\sum_{j,k=1}^{L}h_{jk}c_j^\dagger c_k.
+}
 \tag{T1.2}
 ```
 
 An allowed nearest-neighbor hop moves a particle into a vacancy without changing the order of the particles. The associated fermionic matrix element has positive sign because there is no occupied site between the source and destination. Consequently,
 
 ```math
+{
 H
 \cong
 \bigoplus_{m=0}^{L}
 \left(H_{\mathrm{ch}}\big|_{\wedge^m\mathbb C^L}\right)
 \otimes I_{\mathcal W_m}.
+}
 \tag{T1.3}
 ```
 
@@ -71,10 +77,12 @@ The word is conserved by the bulk, while charge positions evolve under free hopp
 Let $`P_m`$ project onto total particle number $`m`$. Define the reduction
 
 ```math
+{
 \mathcal C(\rho)
 =
 \bigoplus_{m=0}^{L}
-\operatorname{Tr}_{\mathcal W_m}(P_m\rho P_m).
+\mathrm{Tr}_{\mathcal W_m}(P_m\rho P_m).
+}
 \tag{T1.4}
 ```
 
@@ -83,6 +91,7 @@ The unitary identification in (T1.1) is understood in this formula. The map firs
 For nonnegative, possibly time-dependent rates $`\alpha(t)`$ and $`\beta(t)`$, define the physical and charge generators
 
 ```math
+{
 \begin{aligned}
 \mathcal L_t
 &=-i[H,\cdot]
@@ -94,6 +103,7 @@ For nonnegative, possibly time-dependent rates $`\alpha(t)`$ and $`\beta(t)`$, d
 +\beta(t)\mathcal D[c_1]
 +\alpha(t)\mathcal D[c_1^\dagger],
 \end{aligned}
+}
 \tag{T1.5}
 ```
 
@@ -102,7 +112,9 @@ where $`a_s=|0\rangle\langle s|_1`$ and $`\mathcal D[b]\, (X)=bXb^\dagger-\{b^\d
 **T1, reduction statement.** The generators intertwine:
 
 ```math
+{
 \mathcal C\mathcal L_t=\mathcal K_t\mathcal C.
+}
 \tag{T1.6}
 ```
 
@@ -111,25 +123,31 @@ Thus $`\sigma(t)=\mathcal C(\rho(t))`$ obeys the exact charge master equation fo
 To verify the jump terms, a particle at site $`1`$ is always the first particle in the ordered word. Its removal acts as $`c_1`$ on positions and deletes that first letter. Summing over the removed spin and tracing the remaining word gives
 
 ```math
+{
 \mathcal C\left(\sum_s a_s\rho a_s^\dagger\right)
 =c_1\mathcal C(\rho)c_1^\dagger.
+}
 \tag{T1.7}
 ```
 
 Injection at an empty site $`1`$ acts as $`c_1^\dagger`$ on positions and prepends the selected letter. Each of the two injected letters has the same charge trace, so
 
 ```math
+{
 \mathcal C\left(\sum_s a_s^\dagger\rho a_s\right)
 =2c_1^\dagger\mathcal C(\rho)c_1.
+}
 \tag{T1.8}
 ```
 
 There is no endpoint fermionic string in either identity. The anticommutator terms follow from
 
 ```math
+{
 \sum_s a_s^\dagger a_s=n_1,
 \qquad
 \sum_s a_sa_s^\dagger=2(I-n_1),
+}
 \tag{T1.9}
 ```
 
@@ -138,10 +156,12 @@ where $`n_1`$ becomes $`c_1^\dagger c_1`$ on charge space. Equations (T1.7)–(T
 For a number-diagonal input these identities follow directly block by block. To include cross-number coherences, observe that $`[H,N]=0`$ and the jump operators have definite number change. The physical dynamics is therefore covariant under $`e^{i\theta N}`$, and it commutes with the number twirl
 
 ```math
+{
 \mathcal D_N(\rho)
 =\frac1{2\pi}\int_0^{2\pi}
 e^{i\theta N}\rho e^{-i\theta N}\,d\theta
 =\sum_mP_m\rho P_m.
+}
 \tag{T1.10}
 ```
 
@@ -152,20 +172,24 @@ Every number-diagonal charge observable has the same expectation before and afte
 For a number-diagonal charge operator $`\sigma=\bigoplus_m\sigma_m`$, define
 
 ```math
+{
 \mathcal V(\sigma)
 =\bigoplus_{m=0}^{L}
 \sigma_m\otimes\frac{I_{\mathcal W_m}}{2^m}.
+}
 \tag{T1.11}
 ```
 
 This lift inserts a maximally mixed word, independently of the charge state within each number block. It satisfies
 
 ```math
-\mathcal C\mathcal V=\operatorname{id},
+{
+\mathcal C\mathcal V=\mathrm{id},
 \qquad
 \mathcal L_t\mathcal V=\mathcal V\mathcal K_t,
 \qquad
 \|\mathcal V(X)\|_1=\|X\|_1
+}
 \tag{T1.12}
 ```
 
@@ -181,20 +205,24 @@ For loss, tracing the first letter of $`I_{\mathcal W_m}/2^m`$ leaves $`I_{\math
 The vacuum and every product reservoir state $`\Pi_p`$ belong to this family. More explicitly, the charge state
 
 ```math
+{
 \sigma_p
 =\bigoplus_{m=0}^{L}
 p^m(1-p)^{L-m}I_{\wedge^m\mathbb C^L}
+}
 \tag{T1.13}
 ```
 
 lifts to
 
 ```math
+{
 \mathcal V(\sigma_p)
 =
 \bigotimes_{j=1}^{L}
-\operatorname{diag}(1-p,p/2,p/2)
+\mathrm{diag}(1-p,p/2,p/2)
 =\Pi_p.
+}
 \tag{T1.14}
 ```
 
@@ -205,18 +233,22 @@ An arbitrary physical state generally cannot be recovered by lifting its charge 
 Define the one-particle correlation matrix by
 
 ```math
-C_{jk}(t)=\operatorname{Tr}\!\left(\sigma(t)c_k^\dagger c_j\right).
+{
+C_{jk}(t)=\mathrm{Tr}\!\left(\sigma(t)c_k^\dagger c_j\right).
+}
 \tag{T1.15}
 ```
 
 The canonical anticommutation relations imply $`0\leq C(t)\leq I`$ for every charge density operator. Applying $`\mathcal K_t^*`$ to the bilinears gives the closed equation
 
 ```math
+{
 \dot C=A_tC+CA_t^\dagger+\alpha(t)P_1,
 \qquad
 A_t=-ih-\frac{\alpha(t)+\beta(t)}2P_1,
 \qquad
 P_1=|1\rangle\langle1|.
+}
 \tag{T1.16}
 ```
 
@@ -225,25 +257,31 @@ No Gaussian assumption is needed for this equation. The Hamiltonian contributes 
 If $`G(t,s)`$ solves $`\partial_tG(t,s)=A_tG(t,s)`$ with $`G(s,s)=I`$, the solution is
 
 ```math
+{
 C(t)=G(t,0)C(0)G(t,0)^\dagger
 +\int_0^t
 \alpha(s)G(t,s)P_1G(t,s)^\dagger\,ds.
+}
 \tag{T1.17}
 ```
 
 At fixed total rate $`\gamma=\alpha+\beta`$ and filling $`p=\alpha/\gamma`$, put
 
 ```math
+{
 A_\gamma=-ih-\frac\gamma2P_1,
 \qquad
 G_\gamma(t)=e^{A_\gamma t}.
+}
 \tag{T1.18}
 ```
 
 Since $`A_\gamma+A_\gamma^\dagger=-\gamma P_1`$, (T1.17) reduces to
 
 ```math
+{
 C(t)=pI+G_\gamma(t)[C(0)-pI]G_\gamma(t)^\dagger.
+}
 \tag{T1.19}
 ```
 
@@ -254,8 +292,10 @@ A gauge-invariant Gaussian charge state is characterized by a matrix $`C`$ whose
 Gaussianity is needed to reconstruct higher correlations from $`C`$, but it is unnecessary for the number bound below. For a Gaussian charge state and a set of sites $`B`$,
 
 ```math
+{
 \Pr(\text{all sites in }B\text{ empty})
 =\det(I_B-C_B),
+}
 \tag{T1.20}
 ```
 
@@ -266,27 +306,33 @@ where $`C_B`$ is the principal submatrix. The fully occupied all-up physical inp
 For pure loss, $`p=0`$ and $`\beta=\gamma`$, so (T1.19) and $`C(0)\leq I`$ imply
 
 ```math
+{
 C(t)=G_\gamma(t)C(0)G_\gamma(t)^\dagger,
 \qquad
 \langle N(t)\rangle
-=\operatorname{Tr}C(t)
+=\mathrm{Tr}C(t)
 \leq f_\gamma(t),
+}
 \tag{T1.21}
 ```
 
 where
 
 ```math
+{
 f_\gamma(t)
-=\operatorname{Tr}\!\left(G_\gamma(t)^\dagger G_\gamma(t)\right).
+=\mathrm{Tr}\!\left(G_\gamma(t)^\dagger G_\gamma(t)\right).
+}
 \tag{T1.22}
 ```
 
 Because $`I-P_{\mathrm{vac}}\leq N`$,
 
 ```math
-1-\operatorname{Tr}\!\left(P_{\mathrm{vac}}E_{0,t}(\rho)\right)
+{
+1-\mathrm{Tr}\!\left(P_{\mathrm{vac}}E_{0,t}(\rho)\right)
 \leq f_\gamma(t)
+}
 \tag{T1.23}
 ```
 
@@ -297,9 +343,11 @@ for every physical input $`\rho`$. This includes non-Gaussian states, spin-charg
 Define
 
 ```math
+{
 X_\gamma
 =\int_0^\infty
 G_\gamma(t)^\dagger G_\gamma(t)\,dt.
+}
 \tag{T2.1}
 ```
 
@@ -308,33 +356,39 @@ The integral exists and is positive definite. Its exact entries and trace yield 
 **T2, Gramian and survival statement.** For $`1\leq j\leq k\leq L`$,
 
 ```math
+{
 (X_\gamma)_{jk}
 =
 \begin{cases}
 (L+1-k)\left[
 \dfrac j\gamma+\dfrac{\gamma(j-1)}{4J^2}
 \right],
-&j,k\text{ have the same parity},\\[6pt]
+&j,k\text{ have the same parity},\\
 \dfrac{i(L+1-k)}{2J},
 &j<k\text{ have opposite parity}.
 \end{cases}
+}
 \tag{T2.2}
 ```
 
 The lower triangle is the Hermitian conjugate. In particular,
 
 ```math
-T_L(\gamma):=\operatorname{Tr}X_\gamma
+{
+T_L(\gamma):=\mathrm{Tr}X_\gamma
 =
 \frac{L(L+1)(L+2)}{6\gamma}
 +\frac{\gamma L(L^2-1)}{24J^2}.
+}
 \tag{T2.3}
 ```
 
 For every integer $`m\geq1`$,
 
 ```math
+{
 f_\gamma\!\left(2mT_L(\gamma)\right)\leq2^{-m}.
+}
 \tag{T2.4}
 ```
 
@@ -345,9 +399,11 @@ At fixed $`J,\gamma>0`$, the time $`T_L(\gamma)`$ is $`\Theta(L^3)`$.
 If $`A_\gamma v=\lambda v`$, dissipativity gives
 
 ```math
-2\operatorname{Re}\lambda\,\|v\|^2
+{
+2\mathrm{Re}\lambda\,\|v\|^2
 =v^\dagger(A_\gamma+A_\gamma^\dagger)v
 =-\gamma|v_1|^2.
+}
 \tag{T2.5}
 ```
 
@@ -356,7 +412,9 @@ Every eigenvalue has nonpositive real part. If one had zero real part, then $`v_
 It follows that $`G_\gamma(t)\to0`$ exponentially in finite dimension and that the integral (T2.1) converges. Integration of its derivative gives
 
 ```math
+{
 A_\gamma^\dagger X_\gamma+X_\gamma A_\gamma=-I.
+}
 \tag{T2.6}
 ```
 
@@ -367,11 +425,13 @@ This Lyapunov equation has a unique solution. Indeed, if $`A_\gamma^\dagger Y+YA
 With all out-of-range entries set to zero, (T2.6) reads
 
 ```math
+{
 iJ\left(
 X_{j-1,k}+X_{j+1,k}-X_{j,k-1}-X_{j,k+1}
 \right)
 -\frac\gamma2(\delta_{j1}+\delta_{k1})X_{jk}
 =-\delta_{jk}.
+}
 \tag{T2.7}
 ```
 
@@ -415,27 +475,32 @@ which proves (T2.3).
 The one-particle propagator is contractive because $`A_\gamma+A_\gamma^\dagger=-\gamma P_1\leq0`$. Its squared Frobenius norm obeys
 
 ```math
+{
 f_\gamma'(t)
 =-\gamma\|\langle1|G_\gamma(t)\|_2^2\leq0,
 \qquad
 \int_0^\infty f_\gamma(t)\,dt=T_L(\gamma).
+}
 \tag{T2.8}
 ```
 
 Set $`\tau=2T_L(\gamma)`$. Monotonicity gives
 
 ```math
+{
 \tau f_\gamma(\tau)
 \leq\int_0^\tau f_\gamma(t)\,dt
 \leq T_L(\gamma),
 \qquad
 f_\gamma(\tau)\leq\frac12.
+}
 \tag{T2.9}
 ```
 
 Semigroup composition and the Frobenius-norm product inequality imply
 
 ```math
+{
 \begin{aligned}
 f_\gamma(s+t)
 &=\|G_\gamma(s)G_\gamma(t)\|_{\mathrm F}^2\\
@@ -444,6 +509,7 @@ f_\gamma(s+t)
 \|G_\gamma(t)\|_{\mathrm F}^2
 =f_\gamma(s)f_\gamma(t).
 \end{aligned}
+}
 \tag{T2.10}
 ```
 

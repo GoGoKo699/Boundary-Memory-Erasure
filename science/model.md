@@ -61,7 +61,7 @@ The loss rate of an occupied spin is $`\beta=\gamma(1-p)`$. The total injection 
 For each constant $`p`$, the stationary state is
 
 ```math
-\Pi_p=\bigotimes_{j=1}^{L}\operatorname{diag}(1-p,p/2,p/2).
+\Pi_p=\bigotimes_{j=1}^{L}\mathrm{diag}(1-p,p/2,p/2).
 ```
 
 Local balance gives $`\beta(p/2)=(\alpha/2)(1-p)`$, and configurations linked by $`H`$ have the same stationary weight. Therefore $`\mathcal L_{H,p}(\Pi_p)=0`$. Uniqueness and quantitative convergence follow from the channel bounds proved below; they are not extra mixing assumptions.
@@ -84,7 +84,7 @@ For states, use half trace distance,
 D(\rho,\sigma)=\frac12\|\rho-\sigma\|_1.
 ```
 
-Let $`\mathcal R_\sigma(X)=\sigma\operatorname{Tr}X`$ denote replacement by $`\sigma`$. A protocol $`\Phi_T`$ erases with error at most $`\varepsilon`$ if
+Let $`\mathcal R_\sigma(X)=\sigma\mathrm{Tr}X`$ denote replacement by $`\sigma`$. A protocol $`\Phi_T`$ erases with error at most $`\varepsilon`$ if
 
 ```math
 \frac12\|\Phi_T-\mathcal R_\pi\|_\diamond\leq\varepsilon.

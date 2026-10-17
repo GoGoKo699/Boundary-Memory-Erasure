@@ -50,7 +50,7 @@ The source's universal dynamical map terminology concerns this input-independent
 ```math
 \frac12\|\Phi_T-\mathcal R_\pi\|_\diamond\leq\varepsilon,
 \qquad
-\mathcal R_\pi(X)=\pi\,\operatorname{Tr}X.
+\mathcal R_\pi(X)=\pi\,\mathrm{Tr}X.
 ```
 
 For every joint input, the desired output is $`\pi\otimes\rho_R`$. The reference marginal is preserved; all dependence of the system on the unknown input is removed to the stated error. A reference of dimension $`d`$ suffices in the diamond-norm supremum.
@@ -91,7 +91,7 @@ The balance equation
 gives the local stationary weights. Configurations connected by hopping have the same product weight, so
 
 ```math
-\Pi_p=\bigotimes_{j=1}^L\operatorname{diag}(1-p,p/2,p/2),
+\Pi_p=\bigotimes_{j=1}^L\mathrm{diag}(1-p,p/2,p/2),
 \qquad
 \mathcal L_{H,p}(\Pi_p)=0.
 ```
@@ -162,7 +162,7 @@ A different statement concerns reconstruction. The lift
 
 is invariant under the dynamics and preserves trace distance on its number-diagonal charge inputs. It describes states whose spin words are maximally mixed within each sector. It does not reconstruct an arbitrary physical state from its charge marginal.
 
-For the charge covariance $`C_{jk}=\operatorname{Tr}(\sigma c_k^\dagger c_j)`$,
+For the charge covariance $`C_{jk}=\mathrm{Tr}(\sigma c_k^\dagger c_j)`$,
 
 ```math
 \dot C=A_tC+CA_t^\dagger+\alpha(t)P_1,
@@ -186,12 +186,12 @@ A_\gamma^\dagger X+XA_\gamma=-I
 exists. [T2](../science/charge_transport.md#t2-exact-gramian-and-a-uniform-survival-estimate) solves this equation entry by entry and obtains
 
 ```math
-T_L=\operatorname{Tr}X
+T_L=\mathrm{Tr}X
 =\frac{L(L+1)(L+2)}{6\gamma}
 +\frac{\gamma L(L^2-1)}{24J^2}.
 ```
 
-At fixed positive $`J,\gamma`$, this is a cubic time scale. Let $`f_\gamma(t)=\operatorname{Tr}(G^\dagger G)`$. Its monotonicity, integral $`T_L`$, and semigroup contraction imply
+At fixed positive $`J,\gamma`$, this is a cubic time scale. Let $`f_\gamma(t)=\mathrm{Tr}(G^\dagger G)`$. Its monotonicity, integral $`T_L`$, and semigroup contraction imply
 
 ```math
 f_\gamma(2mT_L)\leq2^{-m},
@@ -211,7 +211,7 @@ For a joint output $`\omega_{SR}`$, projection onto vacuum has the form
 (P_{\mathrm{vac}}\otimes I)
 =P_{\mathrm{vac}}\otimes\tau_R,
 \qquad
-\operatorname{Tr}\tau_R=1-u.
+\mathrm{Tr}\tau_R=1-u.
 ```
 
 The zero-particle system space is one dimensional. Gentle projection controls the change in the joint state, and $`\rho_R-\tau_R\geq0`$ has trace $`u`$. Together these give the [reference estimate](../science/erasure_protocol.md#draining-also-decouples-the-reference)
