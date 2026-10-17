@@ -1,0 +1,533 @@
+{
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "model": {
+    "tolerance": 1e-10,
+    "cases": [
+      {
+        "L": 2,
+        "J": 0.8,
+        "gamma": 1.2,
+        "p": 0.0,
+        "charge_intertwining_residual": 3.925231146709438e-17,
+        "mixed_word_lift_residual": 0.0,
+        "stationary_lift_residual": 0.0,
+        "stationarity_residual": 0.0,
+        "rightmost_spin_generator_residual": 2.220446049250313e-16,
+        "all_endpoint_matrix_unit_commutator": 0.0,
+        "full_charge_intertwining_basis_size": 81,
+        "full_basis_max_residual": 0.0,
+        "current_nonzero_eigenvalues": [
+          -0.8,
+          0.8
+        ],
+        "tail_projector_rank": 3,
+        "maximum_residual": 2.220446049250313e-16
+      },
+      {
+        "L": 2,
+        "J": 0.8,
+        "gamma": 1.2,
+        "p": 0.13,
+        "charge_intertwining_residual": 5.419449386414209e-17,
+        "mixed_word_lift_residual": 3.1031676915590914e-17,
+        "stationary_lift_residual": 0.0,
+        "stationarity_residual": 1.7085044840333033e-17,
+        "rightmost_spin_generator_residual": 0.0,
+        "all_endpoint_matrix_unit_commutator": 0.0,
+        "full_charge_intertwining_basis_size": 81,
+        "full_basis_max_residual": 1.1102230246251565e-16,
+        "current_nonzero_eigenvalues": [
+          -0.8,
+          0.8
+        ],
+        "tail_projector_rank": 3,
+        "maximum_residual": 1.1102230246251565e-16
+      },
+      {
+        "L": 2,
+        "J": 0.8,
+        "gamma": 1.2,
+        "p": 0.6666666666666666,
+        "charge_intertwining_residual": 8.239479992065644e-17,
+        "mixed_word_lift_residual": 3.179800655392251e-17,
+        "stationary_lift_residual": 0.0,
+        "stationarity_residual": 2.4037033579794548e-17,
+        "rightmost_spin_generator_residual": 5.551115123125783e-17,
+        "all_endpoint_matrix_unit_commutator": 0.0,
+        "full_charge_intertwining_basis_size": 81,
+        "full_basis_max_residual": 1.5700924586837752e-16,
+        "current_nonzero_eigenvalues": [
+          -0.8,
+          0.8
+        ],
+        "tail_projector_rank": 3,
+        "maximum_residual": 1.5700924586837752e-16
+      },
+      {
+        "L": 3,
+        "J": 0.8,
+        "gamma": 1.2,
+        "p": 0.0,
+        "charge_intertwining_residual": 7.689737825424502e-17,
+        "mixed_word_lift_residual": 2.8185920280518337e-17,
+        "stationary_lift_residual": 0.0,
+        "stationarity_residual": 0.0,
+        "rightmost_spin_generator_residual": 2.220446049250313e-16,
+        "all_endpoint_matrix_unit_commutator": 0.0,
+        "full_charge_intertwining_basis_size": 0,
+        "full_basis_max_residual": 0.0,
+        "current_nonzero_eigenvalues": [
+          -0.8,
+          0.8
+        ],
+        "tail_projector_rank": 12,
+        "maximum_residual": 2.220446049250313e-16
+      },
+      {
+        "L": 3,
+        "J": 0.8,
+        "gamma": 1.2,
+        "p": 0.13,
+        "charge_intertwining_residual": 7.7520986059233e-17,
+        "mixed_word_lift_residual": 9.220181747203677e-18,
+        "stationary_lift_residual": 1.1188630228279524e-16,
+        "stationarity_residual": 1.7065080441436937e-17,
+        "rightmost_spin_generator_residual": 0.0,
+        "all_endpoint_matrix_unit_commutator": 0.0,
+        "full_charge_intertwining_basis_size": 0,
+        "full_basis_max_residual": 0.0,
+        "current_nonzero_eigenvalues": [
+          -0.8,
+          0.8
+        ],
+        "tail_projector_rank": 12,
+        "maximum_residual": 1.1188630228279524e-16
+      },
+      {
+        "L": 3,
+        "J": 0.8,
+        "gamma": 1.2,
+        "p": 0.6666666666666666,
+        "charge_intertwining_residual": 8.754769743147776e-17,
+        "mixed_word_lift_residual": 1.8843920332467886e-17,
+        "stationary_lift_residual": 2.7755575615628914e-17,
+        "stationarity_residual": 1.962615573354719e-17,
+        "rightmost_spin_generator_residual": 5.551115123125783e-17,
+        "all_endpoint_matrix_unit_commutator": 0.0,
+        "full_charge_intertwining_basis_size": 0,
+        "full_basis_max_residual": 0.0,
+        "current_nonzero_eigenvalues": [
+          -0.8,
+          0.8
+        ],
+        "tail_projector_rank": 12,
+        "maximum_residual": 8.754769743147776e-17
+      },
+      {
+        "L": 4,
+        "J": 0.8,
+        "gamma": 1.2,
+        "p": 0.0,
+        "charge_intertwining_residual": 1.2103737040673047e-16,
+        "mixed_word_lift_residual": 1.414624184311813e-17,
+        "stationary_lift_residual": 0.0,
+        "stationarity_residual": 0.0,
+        "rightmost_spin_generator_residual": 2.220446049250313e-16,
+        "all_endpoint_matrix_unit_commutator": 0.0,
+        "full_charge_intertwining_basis_size": 0,
+        "full_basis_max_residual": 0.0,
+        "current_nonzero_eigenvalues": [
+          -0.8,
+          0.8
+        ],
+        "tail_projector_rank": 39,
+        "maximum_residual": 2.220446049250313e-16
+      },
+      {
+        "L": 4,
+        "J": 0.8,
+        "gamma": 1.2,
+        "p": 0.13,
+        "charge_intertwining_residual": 1.105435436100187e-16,
+        "mixed_word_lift_residual": 2.2805387972534316e-17,
+        "stationary_lift_residual": 1.1403415587680945e-16,
+        "stationarity_residual": 1.7222798712737515e-17,
+        "rightmost_spin_generator_residual": 0.0,
+        "all_endpoint_matrix_unit_commutator": 0.0,
+        "full_charge_intertwining_basis_size": 0,
+        "full_basis_max_residual": 0.0,
+        "current_nonzero_eigenvalues": [
+          -0.8,
+          0.8
+        ],
+        "tail_projector_rank": 39,
+        "maximum_residual": 1.1403415587680945e-16
+      },
+      {
+        "L": 4,
+        "J": 0.8,
+        "gamma": 1.2,
+        "p": 0.6666666666666666,
+        "charge_intertwining_residual": 8.84453829563991e-17,
+        "mixed_word_lift_residual": 1.6319313714807294e-17,
+        "stationary_lift_residual": 1.7433755170605403e-17,
+        "stationarity_residual": 1.0551910960100405e-17,
+        "rightmost_spin_generator_residual": 5.551115123125783e-17,
+        "all_endpoint_matrix_unit_commutator": 0.0,
+        "full_charge_intertwining_basis_size": 0,
+        "full_basis_max_residual": 0.0,
+        "current_nonzero_eigenvalues": [
+          -0.8,
+          0.8
+        ],
+        "tail_projector_rank": 39,
+        "maximum_residual": 8.84453829563991e-17
+      }
+    ]
+  },
+  "transport": {
+    "tolerance": 1e-09,
+    "cases": [
+      {
+        "L": 1,
+        "J": 0.7,
+        "gamma": 1.3,
+        "lyapunov_residual": 0.0,
+        "relative_solution_error": 0.0,
+        "minimum_gramian_eigenvalue": 0.7692307692307692,
+        "trace": 0.7692307692307692,
+        "trace_error": 0.0,
+        "survival_at_one_two_three_blocks": [
+          0.1353352832366127,
+          0.018315638888734182,
+          0.0024787521766663585
+        ]
+      },
+      {
+        "L": 1,
+        "J": 1.0,
+        "gamma": 0.5,
+        "lyapunov_residual": 0.0,
+        "relative_solution_error": 0.0,
+        "minimum_gramian_eigenvalue": 2.0,
+        "trace": 2.0,
+        "trace_error": 0.0,
+        "survival_at_one_two_three_blocks": [
+          0.1353352832366127,
+          0.018315638888734182,
+          0.0024787521766663585
+        ]
+      },
+      {
+        "L": 1,
+        "J": 1.0,
+        "gamma": 3.0,
+        "lyapunov_residual": 0.0,
+        "relative_solution_error": 0.0,
+        "minimum_gramian_eigenvalue": 0.3333333333333333,
+        "trace": 0.3333333333333333,
+        "trace_error": 0.0,
+        "survival_at_one_two_three_blocks": [
+          0.1353352832366127,
+          0.018315638888734182,
+          0.0024787521766663585
+        ]
+      },
+      {
+        "L": 2,
+        "J": 0.7,
+        "gamma": 1.3,
+        "lyapunov_residual": 3.1401849173675503e-16,
+        "relative_solution_error": 8.133130792946807e-16,
+        "minimum_gramian_eigenvalue": 1.0825763833373991,
+        "trace": 3.740188383045526,
+        "trace_error": 0.0,
+        "survival_at_one_two_three_blocks": [
+          0.023918985274840394,
+          0.00012105833290537576,
+          1.4081009511110796e-06
+        ]
+      },
+      {
+        "L": 2,
+        "J": 1.0,
+        "gamma": 0.5,
+        "lyapunov_residual": 0.0,
+        "relative_solution_error": 5.680632358836438e-16,
+        "minimum_gramian_eigenvalue": 3.5586088907313407,
+        "trace": 8.125,
+        "trace_error": 0.0,
+        "survival_at_one_two_three_blocks": [
+          0.03458915502134225,
+          0.0006023093663748424,
+          1.0477497639278826e-05
+        ]
+      },
+      {
+        "L": 2,
+        "J": 1.0,
+        "gamma": 3.0,
+        "lyapunov_residual": 1.5700924586837752e-16,
+        "relative_solution_error": 3.794068863802775e-16,
+        "minimum_gramian_eigenvalue": 0.41666666666666663,
+        "trace": 2.083333333333333,
+        "trace_error": 0.0,
+        "survival_at_one_two_three_blocks": [
+          0.005265367858042569,
+          1.6764113709599087e-05,
+          4.539964316884757e-08
+        ]
+      },
+      {
+        "L": 3,
+        "J": 0.7,
+        "gamma": 1.3,
+        "lyapunov_residual": 0.0,
+        "relative_solution_error": 1.7331061550280073e-15,
+        "minimum_gramian_eigenvalue": 1.1675670957919417,
+        "trace": 10.345368916797488,
+        "trace_error": 0.0,
+        "survival_at_one_two_three_blocks": [
+          0.006775956369875521,
+          1.8350457425170206e-05,
+          4.9180275115252e-08
+        ]
+      },
+      {
+        "L": 3,
+        "J": 1.0,
+        "gamma": 0.5,
+        "lyapunov_residual": 0.0,
+        "relative_solution_error": 1.7399983207983286e-15,
+        "minimum_gramian_eigenvalue": 3.858385789635518,
+        "trace": 20.5,
+        "trace_error": 0.0,
+        "survival_at_one_two_three_blocks": [
+          0.012644031379385712,
+          7.79887539242911e-05,
+          4.824911804373239e-07
+        ]
+      },
+      {
+        "L": 3,
+        "J": 1.0,
+        "gamma": 3.0,
+        "lyapunov_residual": 7.021666937153402e-16,
+        "relative_solution_error": 1.0584127560197785e-15,
+        "minimum_gramian_eigenvalue": 0.4337140940191821,
+        "trace": 6.333333333333334,
+        "trace_error": 8.881784197001252e-16,
+        "survival_at_one_two_three_blocks": [
+          0.00558737705111013,
+          9.546492506668094e-06,
+          1.686509327522169e-08
+        ]
+      },
+      {
+        "L": 4,
+        "J": 0.7,
+        "gamma": 1.3,
+        "lyapunov_residual": 8.95090418262362e-16,
+        "relative_solution_error": 1.9528495261621363e-15,
+        "minimum_gramian_eigenvalue": 1.2597009138586115,
+        "trace": 22.017268445839875,
+        "trace_error": 0.0,
+        "survival_at_one_two_three_blocks": [
+          0.004570334890709893,
+          8.827681944870404e-06,
+          1.722700586418978e-08
+        ]
+      },
+      {
+        "L": 4,
+        "J": 1.0,
+        "gamma": 0.5,
+        "lyapunov_residual": 0.0,
+        "relative_solution_error": 4.36091163970356e-15,
+        "minimum_gramian_eigenvalue": 4.75734805416464,
+        "trace": 41.25,
+        "trace_error": 0.0,
+        "survival_at_one_two_three_blocks": [
+          0.00744750865617141,
+          2.7291205169492303e-05,
+          1.0005475928090019e-07
+        ]
+      },
+      {
+        "L": 4,
+        "J": 1.0,
+        "gamma": 3.0,
+        "lyapunov_residual": 1.2658490090568385e-15,
+        "relative_solution_error": 2.1113581359605577e-15,
+        "minimum_gramian_eigenvalue": 0.4479201054960369,
+        "trace": 14.166666666666668,
+        "trace_error": 3.552713678800501e-15,
+        "survival_at_one_two_three_blocks": [
+          0.0043423447223546584,
+          7.625755029890242e-06,
+          1.3212452066432774e-08
+        ]
+      },
+      {
+        "L": 7,
+        "J": 0.7,
+        "gamma": 1.3,
+        "lyapunov_residual": 8.759511914735174e-15,
+        "relative_solution_error": 1.4639485869735663e-14,
+        "minimum_gramian_eigenvalue": 1.4682713693071512,
+        "trace": 101.75824175824175,
+        "trace_error": 0.0,
+        "survival_at_one_two_three_blocks": [
+          0.0032712629580186146,
+          5.035185650374981e-06,
+          7.750185738793352e-09
+        ]
+      },
+      {
+        "L": 7,
+        "J": 1.0,
+        "gamma": 0.5,
+        "lyapunov_residual": 0.0,
+        "relative_solution_error": 5.1601229015106764e-14,
+        "minimum_gramian_eigenvalue": 6.812099950339642,
+        "trace": 175.0,
+        "trace_error": 0.0,
+        "survival_at_one_two_three_blocks": [
+          0.004090223862674808,
+          8.295427699645876e-06,
+          1.6822968780596266e-08
+        ]
+      },
+      {
+        "L": 7,
+        "J": 1.0,
+        "gamma": 3.0,
+        "lyapunov_residual": 5.375130756895088e-15,
+        "relative_solution_error": 3.624531903953018e-14,
+        "minimum_gramian_eigenvalue": 0.4752157941786565,
+        "trace": 70.0,
+        "trace_error": 0.0,
+        "survival_at_one_two_three_blocks": [
+          0.003318814803601165,
+          5.151988168270871e-06,
+          7.997774727146858e-09
+        ]
+      },
+      {
+        "L": 12,
+        "J": 0.7,
+        "gamma": 1.3,
+        "lyapunov_residual": 4.0050131901141635e-14,
+        "relative_solution_error": 9.538930217222337e-14,
+        "minimum_gramian_eigenvalue": 1.7234995476997612,
+        "trace": 469.6938775510205,
+        "trace_error": 1.1368683772161603e-13,
+        "survival_at_one_two_three_blocks": [
+          0.0029390156492631585,
+          4.224512006584519e-06,
+          6.072190291794705e-09
+        ]
+      },
+      {
+        "L": 12,
+        "J": 1.0,
+        "gamma": 0.5,
+        "lyapunov_residual": 0.0,
+        "relative_solution_error": 1.1094313855578556e-13,
+        "minimum_gramian_eigenvalue": 10.11320120819149,
+        "trace": 763.75,
+        "trace_error": 0.0,
+        "survival_at_one_two_three_blocks": [
+          0.0032110415350383005,
+          5.136060595974763e-06,
+          8.215127053515692e-09
+        ]
+      },
+      {
+        "L": 12,
+        "J": 1.0,
+        "gamma": 3.0,
+        "lyapunov_residual": 3.74094092143322e-14,
+        "relative_solution_error": 2.0751213040743403e-13,
+        "minimum_gramian_eigenvalue": 0.5006457137603324,
+        "trace": 335.8333333333333,
+        "trace_error": 5.684341886080802e-14,
+        "survival_at_one_two_three_blocks": [
+          0.0029706882556641777,
+          4.317292279285577e-06,
+          6.2743337020569965e-09
+        ]
+      }
+    ]
+  },
+  "vacuum": {
+    "tolerance": 1e-10,
+    "cases": [
+      {
+        "L": 1,
+        "J": 0.8,
+        "gamma": 1.2,
+        "p": 0.13,
+        "t": 1.7,
+        "KMS_operator_residual": 1.1102230246251565e-16,
+        "vacuum_effect_hermiticity": 0.0,
+        "minimum_direct": 0.7568750215357694,
+        "minimum_formula": 0.7568750215357695,
+        "minimum_absolute_error": 1.1102230246251565e-16
+      },
+      {
+        "L": 2,
+        "J": 0.8,
+        "gamma": 1.2,
+        "p": 0.13,
+        "t": 2.3,
+        "KMS_operator_residual": 1.6653345369377348e-16,
+        "vacuum_effect_hermiticity": 0.0,
+        "minimum_direct": 0.3015829269640806,
+        "minimum_formula": 0.30158292696408084,
+        "minimum_absolute_error": 2.220446049250313e-16
+      },
+      {
+        "L": 3,
+        "J": 0.8,
+        "gamma": 1.2,
+        "p": 0.13,
+        "t": 7.1,
+        "KMS_operator_residual": 8.913217194067714e-16,
+        "vacuum_effect_hermiticity": 7.800953297150902e-17,
+        "minimum_direct": 0.455954443923061,
+        "minimum_formula": 0.45595444392306134,
+        "minimum_absolute_error": 3.3306690738754696e-16
+      },
+      {
+        "L": 3,
+        "J": 1.1,
+        "gamma": 0.7,
+        "p": 0.37,
+        "t": 8.0,
+        "KMS_operator_residual": 5.428309668505334e-16,
+        "vacuum_effect_hermiticity": 8.622836486545017e-17,
+        "minimum_direct": 0.13131844247901972,
+        "minimum_formula": 0.13131844247901983,
+        "minimum_absolute_error": 1.1102230246251565e-16
+      },
+      {
+        "L": 3,
+        "J": 0.6,
+        "gamma": 1.5,
+        "p": 0.6666666666666666,
+        "t": 6.2,
+        "KMS_operator_residual": 1.8043858252676963e-17,
+        "vacuum_effect_hermiticity": 7.473920761626731e-18,
+        "minimum_direct": 0.021046157635130798,
+        "minimum_formula": 0.02104615763513083,
+        "minimum_absolute_error": 3.122502256758253e-17
+      }
+    ]
+  },
+  "passed": true
+}
