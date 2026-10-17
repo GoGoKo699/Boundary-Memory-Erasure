@@ -9,6 +9,14 @@ This repository studies information erasure through one endpoint of a fixed cohe
 - science/model.md: Hamiltonian, control classes, reservoir rates, target states, half trace and half diamond distance.
 - science/interpretation.md: physical mechanism, analytical filling regimes, and a two-site worked example.
 
+## Study route
+
+- learning/MILESTONES.md: the project's shared map of exactly 30 milestones, with central questions, understanding targets, dependencies, story roles, conceptual connections, and source pointers. M01–M13 cover background and preliminaries; M14–M30 cover the research narrative and innovation. M13 and M30 synthesize their respective phases.
+- learning/RIVAS_HUELGA_BRIDGE.md: the sole educational bridge, anchored to Rivas and Huelga, Open Quantum Systems: An Introduction, first edition (2012), using arXiv:1104.5242v2 dated 9 February 2012. Page pointers use that preprint's printed pagination.
+- Begin with the bridge's targeted source route and the milestone map; follow the linked science pages for exact statements and proofs. The book supplies open-system foundations, while the repository supplies the specialized charge, erasure, mixing, and resource arguments.
+
+The map is intrinsic to the project and independent of any reader's background or progress. Primary research sources in references/ provide scientific attribution; they are not additional educational anchors.
+
 ## Theorem and proof route
 
 - science/control_obstruction.md: U1, the rank-two physical current and local population inequality; U2, the exponential local-memory bound for every unital endpoint system protocol.
@@ -28,6 +36,8 @@ The unital lower bound uses the same nearly maximally mixed product input agains
 Charge reduction is exact for arbitrary physical inputs after the proof-only number pinch. Reconstructing the full physical state from its charge state requires the separately stated mixed-word family. Gaussian charge calculations for a known input do not assume an arbitrary physical input is Gaussian.
 
 The erasure target is pi=I/3^L. A constant bath of filling p converges to Pi_p; the one-switch protocol first erases into a dilute state and then reaches pi. Reference decoupling uses half diamond distance.
+
+The anchor's universal dynamical map terminology concerns one input-independent physical CPTP map. Universal erasure additionally requires uniform closeness to a replacement channel, including reference correlations. Stationarity and qualitative relaxation do not provide the explicit chain-length dependence or complete mixing constants proved here.
 
 Hamiltonian reversal and number twirling are proof devices. The implemented bath schedule uses neither, and has no monitoring, postselection, or feedback. The filling iff applies to the stated open-loop spin-independent bath class. The unital theorem does not silently include a retained pure controller, which is separately counted in R3.
 
