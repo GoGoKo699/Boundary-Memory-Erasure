@@ -48,7 +48,7 @@ The [thirty-milestone map](learning/MILESTONES.md) follows the project's logical
 
 The single educational anchor is Rivas and Huelga's *Open Quantum Systems: An Introduction* (2012 edition; [author preprint v2](https://arxiv.org/abs/1104.5242v2)). The [Rivas–Huelga bridge](learning/RIVAS_HUELGA_BRIDGE.md) gives targeted section and page pointers, translates the source's conventions, and develops the additional connections required by this project. Each milestone links to its authoritative scientific derivation.
 
-## Two quantitative statements
+## Quantitative bounds
 
 For the product input $`(I/3)^{\otimes(L-1)}\otimes|\uparrow\rangle\langle\uparrow|`$, every unital endpoint system protocol obeys
 
