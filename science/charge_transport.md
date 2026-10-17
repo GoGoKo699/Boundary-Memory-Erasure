@@ -357,16 +357,18 @@ The integral exists and is positive definite. Its exact entries and trace yield 
 
 ```math
 {
+\begin{aligned}
 (X_\gamma)_{jk}
-=
-\begin{cases}
+&=
 (L+1-k)\left[
 \dfrac j\gamma+\dfrac{\gamma(j-1)}{4J^2}
 \right],
-&j,k\text{ have the same parity},\\
+&&j,k\text{ have the same parity},\\
+(X_\gamma)_{jk}
+&=
 \dfrac{i(L+1-k)}{2J},
-&j<k\text{ have opposite parity}.
-\end{cases}
+&&j<k\text{ have opposite parity}.
+\end{aligned}
 }
 \tag{T2.2}
 ```
