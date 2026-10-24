@@ -1,9 +1,10 @@
 """Independent finite-dimensional audit of the leaky-bath vacuum effect.
 
 Checks the physical qutrit Lindbladian, its KMS reversal, and the claimed
-minimum eigenvalue.  The analytic argument in science/vacuum_accessibility.md is primary.
+vacuum-effect spectrum.  The analytic argument in science/vacuum_accessibility.md is primary.
 """
 
+import itertools
 
 import numpy as np
 from scipy.linalg import expm
@@ -76,7 +77,20 @@ def audit(length, hopping, gamma, filling, duration):
     contraction = expm(duration * drift)
     eta = np.linalg.eigvalsh(contraction.conj().T @ contraction)
     minimum_formula = (1 - filling) ** length * np.prod(1 - eta)
-    minimum_direct = np.linalg.eigvalsh((effect + effect.conj().T) / 2).min()
+    effect_eigenvalues = np.linalg.eigvalsh((effect + effect.conj().T) / 2)
+    minimum_direct = effect_eigenvalues.min()
+    # Each occupied charge mode contributes spin-word multiplicity two.
+    # Comparing the complete spectrum checks these degeneracies as well as
+    # the single extremal eigenvalue used by the accessibility bound.
+    spectrum_formula = []
+    for occupations in itertools.product((0, 1), repeat=length):
+        eigenvalue = np.prod([
+            (1 - filling) * (1 - value) if occupied
+            else 1 - filling + filling * value
+            for value, occupied in zip(eta, occupations)
+        ])
+        spectrum_formula.extend([eigenvalue] * 2**sum(occupations))
+    spectrum_error = np.max(np.abs(effect_eigenvalues - np.sort(spectrum_formula)))
     return {
         "L": length,
         "J": hopping,
@@ -88,6 +102,7 @@ def audit(length, hopping, gamma, filling, duration):
         "minimum_direct": float(minimum_direct),
         "minimum_formula": float(minimum_formula),
         "minimum_absolute_error": float(abs(minimum_direct - minimum_formula)),
+        "spectrum_max_absolute_error": float(spectrum_error),
     }
 
 
@@ -102,7 +117,7 @@ def run():
     tolerance = 1e-10
     for row in cases:
         if max(row['KMS_operator_residual'], row['vacuum_effect_hermiticity'],
-               row['minimum_absolute_error']) >= tolerance:
+               row['minimum_absolute_error'], row['spectrum_max_absolute_error']) >= tolerance:
             raise AssertionError(row)
     return {'tolerance': tolerance, 'cases': cases}
 

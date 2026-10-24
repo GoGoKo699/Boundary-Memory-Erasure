@@ -164,9 +164,9 @@ def run():
                 adjoint_generator(h, jumps, p) - (alpha * vacuum / 2 - beta * one_up)
             )
 
-            # At L=2, verify charge intertwining on every physical matrix unit.
+            # At L=2,3, verify charge intertwining on every physical matrix unit.
             full_basis_error = 0.0
-            if length == 2:
+            if length <= 3:
                 for row in range(dim):
                     for col in range(dim):
                         unit = np.zeros((dim, dim), complex)
@@ -175,8 +175,21 @@ def run():
                             charge_trace(generator(h, jumps, unit), ps, ci)
                             - generator(hc, charge_jumps, charge_trace(unit, ps, ci))
                         ))
+            # Check the mixed-word lift on the complete charge operator basis,
+            # including coherences discarded by its number-sector projection.
+            full_lift_error = 0.0
+            if length <= 3:
+                for row in range(len(cs)):
+                    for col in range(len(cs)):
+                        unit = np.zeros((len(cs), len(cs)), complex)
+                        unit[row, col] = 1
+                        full_lift_error = max(full_lift_error, np.linalg.norm(
+                            generator(h, jumps, isotropic_lift(unit, ps, ci))
+                            - isotropic_lift(generator(hc, charge_jumps, unit), ps, ci)
+                        ))
             maximum = max(charge_error, lift_error, target_error, stationary_error,
-                          rightmost_error, endpoint_residual, full_basis_error)
+                          rightmost_error, endpoint_residual, full_basis_error,
+                          full_lift_error)
             if maximum >= tolerance:
                 raise AssertionError((length, filling, maximum))
             results.append({
@@ -187,8 +200,10 @@ def run():
                 'stationarity_residual': float(stationary_error),
                 'rightmost_spin_generator_residual': float(rightmost_error),
                 'all_endpoint_matrix_unit_commutator': float(endpoint_residual),
-                'full_charge_intertwining_basis_size': dim**2 if length == 2 else 0,
+                'full_charge_intertwining_basis_size': dim**2 if length <= 3 else 0,
                 'full_basis_max_residual': float(full_basis_error),
+                'full_mixed_word_lift_basis_size': len(cs)**2 if length <= 3 else 0,
+                'full_lift_basis_max_residual': float(full_lift_error),
                 'current_nonzero_eigenvalues': nonzero.tolist(),
                 'tail_projector_rank': int(np.trace(q)),
                 'maximum_residual': float(maximum),

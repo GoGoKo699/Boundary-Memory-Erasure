@@ -25,11 +25,11 @@ The default command prints a summary and makes no output file. Every check raise
 |---|---|---|
 | [model_checks.py](model_checks.py) | Physical qutrit generator versus spinless charge reduction, mixed-word lift, product stationarity, tail-current rank and spectrum, local-witness ordering, full-chain rightmost-spin flux | T1, U1–U2, F1–F2 |
 | [transport_checks.py](transport_checks.py) | Explicit Gramian versus its Lyapunov equation and an independent numerical solver, positivity, trace formula, and survival at positive block times | T2 and E1 |
-| [vacuum_checks.py](vacuum_checks.py) | Independently constructed sparse physical Liouvillian, reversed-vacuum operator sandwich, and minimum eigenvalue versus the determinant formula | V1 |
+| [vacuum_checks.py](vacuum_checks.py) | Independently constructed sparse physical Liouvillian, reversed-vacuum operator sandwich, complete vacuum-effect spectrum including spin-word multiplicities, and minimum eigenvalue versus the determinant formula | V1 |
 
-The model module uses $`L=2,3,4`$ and fillings $`0`$, $`0.13`$, and $`2/3`$, with $`J=0.8`$ and $`\gamma=1.2`$. It evaluates the reduction on deterministic random pure states with spin and number coherences. At $`L=2`$ it additionally checks the charge intertwining on all 81 physical matrix units at each filling, so that part is a complete finite-dimensional linear-map check. The endpoint commutators, rightmost-spin generator identity, current eigenvalues, and projector ordering are checked directly as matrices.
+The model module uses $`L=2,3,4`$ and fillings $`0`$, $`0.13`$, and $`2/3`$, with $`J=0.8`$ and $`\gamma=1.2`$. It evaluates the reduction on deterministic random pure states with spin and number coherences. At $`L=2,3`$ it additionally checks the charge intertwining on all 81 and 729 physical matrix units, respectively, at each filling. At those lengths it checks the number-pinched extension of the mixed-word lift on all 16 and 64 charge matrix units. Cross-number units are discarded, and their checks verify that covariance preserves those zero blocks. These are complete finite-dimensional linear-map checks at the stated lengths and fillings. The endpoint commutators, rightmost-spin generator identity, current eigenvalues, and projector ordering are checked directly as matrices.
 
-The transport module covers 18 choices: $`L\in\{1,2,3,4,7,12\}`$ and three positive pairs of $`J,\gamma`$. The physical chain theorem is stated for $`L\geq2`$; the one-site case checks the endpoint convention. The vacuum module covers five choices with $`L=1,2,3`$, several rates and times, and fillings $`0.13`$, $`0.37`$, and $`2/3`$. Its tensor-product construction is separate from the ordered-configuration construction in the model module.
+The transport module covers 18 choices: $`L\in\{1,2,3,4,7,12\}`$ and three positive pairs of $`J,\gamma`$. The physical chain theorem is stated for $`L\geq2`$; the one-site case checks the endpoint convention. The vacuum module covers five choices with $`L=1,2,3`$, several rates and times, and fillings $`0.13`$, $`0.37`$, and $`2/3`$. Its tensor-product construction is separate from the ordered-configuration construction in the model module. For each vacuum case, every physical effect eigenvalue is compared with the mode-product formula, with multiplicity $`2^m`$ for a set of $`m`$ occupied charge modes. The reference output records both the largest spectrum error and the determinant-formula minimum error.
 
 ## Reference output
 
@@ -41,6 +41,7 @@ The committed run passes all 9 model cases, 18 Gramian cases, and 5 vacuum-effec
 | Lyapunov equation | $`4.01\times10^{-14}`$ | $`10^{-9}`$ |
 | Vacuum-effect reversal | $`8.92\times10^{-16}`$ | $`10^{-10}`$ |
 | Minimum vacuum-effect eigenvalue | $`3.34\times10^{-16}`$ | $`10^{-10}`$ |
+| Complete vacuum-effect spectrum | $`6.67\times10^{-16}`$ | $`10^{-10}`$ |
 
 The rounded entries are upper roundings of the values in [results.json](results.json). Gramian relative-solution and trace errors, minimum Gramian eigenvalues, and individual cases are also retained there.
 

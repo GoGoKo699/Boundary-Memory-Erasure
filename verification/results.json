@@ -20,6 +20,8 @@
         "all_endpoint_matrix_unit_commutator": 0.0,
         "full_charge_intertwining_basis_size": 81,
         "full_basis_max_residual": 0.0,
+        "full_mixed_word_lift_basis_size": 16,
+        "full_lift_basis_max_residual": 0.0,
         "current_nonzero_eigenvalues": [
           -0.8,
           0.8
@@ -40,6 +42,8 @@
         "all_endpoint_matrix_unit_commutator": 0.0,
         "full_charge_intertwining_basis_size": 81,
         "full_basis_max_residual": 1.1102230246251565e-16,
+        "full_mixed_word_lift_basis_size": 16,
+        "full_lift_basis_max_residual": 7.850462293418876e-17,
         "current_nonzero_eigenvalues": [
           -0.8,
           0.8
@@ -60,6 +64,8 @@
         "all_endpoint_matrix_unit_commutator": 0.0,
         "full_charge_intertwining_basis_size": 81,
         "full_basis_max_residual": 1.5700924586837752e-16,
+        "full_mixed_word_lift_basis_size": 16,
+        "full_lift_basis_max_residual": 1.3597399555105182e-16,
         "current_nonzero_eigenvalues": [
           -0.8,
           0.8
@@ -78,8 +84,10 @@
         "stationarity_residual": 0.0,
         "rightmost_spin_generator_residual": 2.220446049250313e-16,
         "all_endpoint_matrix_unit_commutator": 0.0,
-        "full_charge_intertwining_basis_size": 0,
+        "full_charge_intertwining_basis_size": 729,
         "full_basis_max_residual": 0.0,
+        "full_mixed_word_lift_basis_size": 64,
+        "full_lift_basis_max_residual": 0.0,
         "current_nonzero_eigenvalues": [
           -0.8,
           0.8
@@ -98,8 +106,10 @@
         "stationarity_residual": 1.7065080441436937e-17,
         "rightmost_spin_generator_residual": 0.0,
         "all_endpoint_matrix_unit_commutator": 0.0,
-        "full_charge_intertwining_basis_size": 0,
-        "full_basis_max_residual": 0.0,
+        "full_charge_intertwining_basis_size": 729,
+        "full_basis_max_residual": 1.1102230246251565e-16,
+        "full_mixed_word_lift_basis_size": 64,
+        "full_lift_basis_max_residual": 7.850462293418876e-17,
         "current_nonzero_eigenvalues": [
           -0.8,
           0.8
@@ -118,14 +128,16 @@
         "stationarity_residual": 1.962615573354719e-17,
         "rightmost_spin_generator_residual": 5.551115123125783e-17,
         "all_endpoint_matrix_unit_commutator": 0.0,
-        "full_charge_intertwining_basis_size": 0,
-        "full_basis_max_residual": 0.0,
+        "full_charge_intertwining_basis_size": 729,
+        "full_basis_max_residual": 1.5700924586837752e-16,
+        "full_mixed_word_lift_basis_size": 64,
+        "full_lift_basis_max_residual": 1.3597399555105182e-16,
         "current_nonzero_eigenvalues": [
           -0.8,
           0.8
         ],
         "tail_projector_rank": 12,
-        "maximum_residual": 8.754769743147776e-17
+        "maximum_residual": 1.5700924586837752e-16
       },
       {
         "L": 4,
@@ -140,6 +152,8 @@
         "all_endpoint_matrix_unit_commutator": 0.0,
         "full_charge_intertwining_basis_size": 0,
         "full_basis_max_residual": 0.0,
+        "full_mixed_word_lift_basis_size": 0,
+        "full_lift_basis_max_residual": 0.0,
         "current_nonzero_eigenvalues": [
           -0.8,
           0.8
@@ -160,6 +174,8 @@
         "all_endpoint_matrix_unit_commutator": 0.0,
         "full_charge_intertwining_basis_size": 0,
         "full_basis_max_residual": 0.0,
+        "full_mixed_word_lift_basis_size": 0,
+        "full_lift_basis_max_residual": 0.0,
         "current_nonzero_eigenvalues": [
           -0.8,
           0.8
@@ -180,6 +196,8 @@
         "all_endpoint_matrix_unit_commutator": 0.0,
         "full_charge_intertwining_basis_size": 0,
         "full_basis_max_residual": 0.0,
+        "full_mixed_word_lift_basis_size": 0,
+        "full_lift_basis_max_residual": 0.0,
         "current_nonzero_eigenvalues": [
           -0.8,
           0.8
@@ -477,7 +495,8 @@
         "vacuum_effect_hermiticity": 0.0,
         "minimum_direct": 0.7568750215357694,
         "minimum_formula": 0.7568750215357695,
-        "minimum_absolute_error": 1.1102230246251565e-16
+        "minimum_absolute_error": 1.1102230246251565e-16,
+        "spectrum_max_absolute_error": 1.1102230246251565e-16
       },
       {
         "L": 2,
@@ -489,7 +508,8 @@
         "vacuum_effect_hermiticity": 0.0,
         "minimum_direct": 0.3015829269640806,
         "minimum_formula": 0.30158292696408084,
-        "minimum_absolute_error": 2.220446049250313e-16
+        "minimum_absolute_error": 2.220446049250313e-16,
+        "spectrum_max_absolute_error": 3.3306690738754696e-16
       },
       {
         "L": 3,
@@ -501,7 +521,8 @@
         "vacuum_effect_hermiticity": 7.800953297150902e-17,
         "minimum_direct": 0.455954443923061,
         "minimum_formula": 0.45595444392306134,
-        "minimum_absolute_error": 3.3306690738754696e-16
+        "minimum_absolute_error": 3.3306690738754696e-16,
+        "spectrum_max_absolute_error": 6.661338147750939e-16
       },
       {
         "L": 3,
@@ -513,7 +534,8 @@
         "vacuum_effect_hermiticity": 8.622836486545017e-17,
         "minimum_direct": 0.13131844247901972,
         "minimum_formula": 0.13131844247901983,
-        "minimum_absolute_error": 1.1102230246251565e-16
+        "minimum_absolute_error": 1.1102230246251565e-16,
+        "spectrum_max_absolute_error": 4.996003610813204e-16
       },
       {
         "L": 3,
@@ -525,7 +547,8 @@
         "vacuum_effect_hermiticity": 7.473920761626731e-18,
         "minimum_direct": 0.021046157635130798,
         "minimum_formula": 0.02104615763513083,
-        "minimum_absolute_error": 3.122502256758253e-17
+        "minimum_absolute_error": 3.122502256758253e-17,
+        "spectrum_max_absolute_error": 4.163336342344337e-17
       }
     ]
   },
