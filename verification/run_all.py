@@ -38,6 +38,7 @@ def main():
         'max_lyapunov_residual': max(x['lyapunov_residual'] for x in result['transport']['cases']),
         'max_vacuum_reversal_residual': max(x['KMS_operator_residual'] for x in result['vacuum']['cases']),
         'max_vacuum_eigenvalue_error': max(x['minimum_absolute_error'] for x in result['vacuum']['cases']),
+        'max_vacuum_spectrum_error': max(x['spectrum_max_absolute_error'] for x in result['vacuum']['cases']),
         'environment': result['environment'],
     }
     print(json.dumps(summary, indent=2))
