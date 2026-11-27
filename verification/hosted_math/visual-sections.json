@@ -1,0 +1,16 @@
+{
+  "README.md": [
+    "Run the boundary drain and refill",
+    "Quantitative bounds"
+  ],
+  "science/erasure_protocol.md": [
+    "E1. Ideal erasure theorem",
+    "Composition and the explicit schedule"
+  ],
+  "science/interpretation.md": [
+    "A two-site calculation"
+  ],
+  "science/reservoir_threshold.md": [
+    "Uniform construction with one reservoir change"
+  ]
+}
