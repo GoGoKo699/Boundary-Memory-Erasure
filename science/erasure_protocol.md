@@ -13,8 +13,9 @@ The precise [model and rate convention](model.md) are
 \qquad
 E_{p,t}=e^{t\mathcal L_{H,p}}.
 }
-\tag{E1.1}
 ```
+
+**(E1.1)**
 
 The Hamiltonian $`H`$, addressed site, and total rate $`\gamma>0`$ remain fixed. Write $`P_{\mathrm{vac}}=|\mathrm{vac}\rangle\langle\mathrm{vac}|`$ and $`\pi=I/3^L=\Pi_{2/3}`$. The replacement channel is $`\mathcal R_\pi(X)=\pi\mathrm{Tr}X`$, and the error is one half of the diamond norm.
 
@@ -30,8 +31,9 @@ T_L(\gamma)
 =\frac{L(L+1)(L+2)}{6\gamma}
 +\frac{\gamma L(L^2-1)}{24J^2},
 }
-\tag{E1.2}
 ```
+
+**(E1.2)**
 
 and choose the predetermined times
 
@@ -46,8 +48,9 @@ t_{\mathrm f}
 \left\lceil\log_2\frac4{3\varepsilon}\right\rceil.
 \end{aligned}
 }
-\tag{E1.3}
 ```
+
+**(E1.3)**
 
 Run the pure-loss bath $`p=0`$ for $`t_{\mathrm d}`$, then the unbiased bath $`p=2/3`$ for $`t_{\mathrm f}`$. The resulting channel
 
@@ -55,8 +58,9 @@ Run the pure-loss bath $`p=0`$ for $`t_{\mathrm d}`$, then the unbiased bath $`p
 {
 \Phi=E_{2/3,t_{\mathrm f}}E_{0,t_{\mathrm d}}
 }
-\tag{E1.4}
 ```
+
+**(E1.4)**
 
 satisfies
 
@@ -64,8 +68,9 @@ satisfies
 {
 \frac12\|\Phi-\mathcal R_\pi\|_\diamond\leq\varepsilon.
 }
-\tag{E1.5}
 ```
+
+**(E1.5)**
 
 The total time is
 
@@ -74,8 +79,9 @@ The total time is
 t_{\mathrm d}+t_{\mathrm f}
 =O\!\left(L^3[1+\log(1/\varepsilon)]\right),
 }
-\tag{E1.6}
 ```
+
+**(E1.6)**
 
 where the implicit constant depends only on the fixed $`J`$ and $`\gamma`$. At fixed accuracy this is $`O(L^3)`$. The guarantee holds for every initial system state and every entanglement with an idle reference.
 
@@ -102,8 +108,9 @@ u=1-\mathrm{Tr}(P\omega_{SR})
 \qquad
 f_\gamma(t)=\mathrm{Tr}\!\left(G_\gamma(t)^\dagger G_\gamma(t)\right),
 }
-\tag{E1.7}
 ```
+
+**(E1.7)**
 
 is uniform over $`\rho_{SR}`$. This bound uses only the system marginal and the operator inequality $`I-P_{\mathrm{vac}}\leq N`$.
 
@@ -115,8 +122,9 @@ P\omega_{SR}P=P_{\mathrm{vac}}\otimes\tau_R,
 \qquad
 \mathrm{Tr}\tau_R=1-u.
 }
-\tag{E1.8}
 ```
+
+**(E1.8)**
 
 Gentle projection gives
 
@@ -124,8 +132,9 @@ Gentle projection gives
 {
 \|\omega_{SR}-P\omega_{SR}P\|_1\leq2\sqrt u.
 }
-\tag{E1.9}
 ```
+
+**(E1.9)**
 
 For completeness, this estimate follows by purifying $`\omega_{SR}`$, projecting that purification with $`P`$, and using trace-norm contraction under the purifying partial trace. For a pure vector with projection failure $`u`$, the norm of the difference between the original rank-one operator and its subnormalized projection is $`\sqrt{u(4-3u)}\leq2\sqrt u`$.
 
@@ -139,8 +148,9 @@ The cross terms between vacuum and nonvacuum vanish under the system partial tra
 \qquad
 \|\omega_R-\tau_R\|_1=u.
 }
-\tag{E1.10}
 ```
+
+**(E1.10)**
 
 Combining (E1.8)–(E1.10) gives
 
@@ -155,8 +165,9 @@ D\!\left(\omega_{SR},P_{\mathrm{vac}}\otimes\rho_R\right)
 \leq\frac32\sqrt{f_\gamma(t)}.
 \end{aligned}
 }
-\tag{E1.11}
 ```
+
+**(E1.11)**
 
 This is a statement about the joint state, so it controls coherences and reference correlations as well as the vacuum population. The projections above appear only in the proof; the physical drain is the unconditional semigroup $`E_{0,t}`$.
 
@@ -168,8 +179,9 @@ Let $`q=2/3`$. The vacuum is in the invariant mixed-word family of T1, and its c
 {
 C(t)=q\left[I-G_\gamma(t)G_\gamma(t)^\dagger\right].
 }
-\tag{E1.12}
 ```
+
+**(E1.12)**
 
 Write $`\eta_1,\ldots,\eta_L\in[0,1]`$ for the eigenvalues of $`G_\gamma(t)G_\gamma(t)^\dagger`$. Contractivity of $`G_\gamma`$ ensures this interval. The charge state remains gauge-invariant Gaussian, with independent occupation probabilities
 
@@ -177,8 +189,9 @@ Write $`\eta_1,\ldots,\eta_L\in[0,1]`$ for the eigenvalues of $`G_\gamma(t)G_\ga
 {
 \nu_j=q(1-\eta_j)
 }
-\tag{E1.13}
 ```
+
+**(E1.13)**
 
 in the diagonalizing mode basis.
 
@@ -190,8 +203,9 @@ The target charge state is
 =\bigoplus_{m=0}^{L}
 q^m(1-q)^{L-m}I_{\wedge^m\mathbb C^L}.
 }
-\tag{E1.14}
 ```
+
+**(E1.14)**
 
 It is invariant under every change of the single-particle mode basis. The actual and target charge states are therefore simultaneously diagonal, with product Bernoulli distributions of parameters $`\nu_j`$ and $`q`$.
 
@@ -203,8 +217,9 @@ D(\sigma(t),\sigma_q)
 \leq\sum_{j=1}^{L}q\eta_j
 =q f_\gamma(t).
 }
-\tag{E1.15}
 ```
+
+**(E1.15)**
 
 The mixed-word lift preserves trace norm and maps $`\sigma_q`$ to $`\Pi_q=\pi`$. Consequently,
 
@@ -213,8 +228,9 @@ The mixed-word lift preserves trace norm and maps $`\sigma_q`$ to $`\Pi_q=\pi`$.
 D\!\left(E_{2/3,t}(P_{\mathrm{vac}}),\pi\right)
 \leq\frac23 f_\gamma(t).
 }
-\tag{E1.16}
 ```
+
+**(E1.16)**
 
 This use of Gaussianity concerns the specified vacuum input after the comparison in (E1.11). It imposes no Gaussian restriction on the unknown input to the complete protocol.
 
@@ -230,8 +246,9 @@ D\!\left(E_{2/3,t}(\Pi_p),\pi\right)
 &\leq\left(\frac23-p\right)f_\gamma(t).
 \end{aligned}
 }
-\tag{E1.17}
 ```
+
+**(E1.17)**
 
 The construction that first prepares $`\Pi_p`$ uniformly from every input is given in [The reservoir threshold](reservoir_threshold.md).
 
@@ -249,8 +266,9 @@ D\!\left(
 \frac32\sqrt{f_\gamma(t_{\mathrm d})}
 +\frac23 f_\gamma(t_{\mathrm f}).
 }
-\tag{E1.18}
 ```
+
+**(E1.18)**
 
 For a difference of quantum channels, the diamond norm is attained on a density operator with a reference of dimension at most the input dimension. Since (E1.18) holds for every reference, it proves
 
@@ -263,8 +281,9 @@ E_{2/3,t_{\mathrm f}}E_{0,t_{\mathrm d}}-\mathcal R_\pi
 \frac32\sqrt{f_\gamma(t_{\mathrm d})}
 +\frac23 f_\gamma(t_{\mathrm f}).
 }
-\tag{E1.19}
 ```
+
+**(E1.19)**
 
 T2 in [Exact charge transport](charge_transport.md) gives $`f_\gamma(2mT_L)\leq2^{-m}`$ for every integer $`m\geq1`$. The times in (E1.3) thus ensure
 
@@ -274,8 +293,9 @@ f_\gamma(t_{\mathrm d})\leq\frac{\varepsilon^2}{9},
 \qquad
 f_\gamma(t_{\mathrm f})\leq\frac{3\varepsilon}{4}.
 }
-\tag{E1.20}
 ```
+
+**(E1.20)**
 
 The two contributions in (E1.19) are at most $`\varepsilon/2`$ each. This proves E1.
 

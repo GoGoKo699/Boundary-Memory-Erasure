@@ -21,7 +21,7 @@ Ordered-spin conservation and its boundary-memory consequences are established f
 A physical basis configuration with $`m`$ particles is uniquely specified by occupied positions
 
 ```math
-1\leq x_1<\cdots<x_m\leq L
+1\leq x_1\lt\cdots\lt x_m\leq L
 ```
 
 and an ordered word $`(s_1,\ldots,s_m)`$ with $`s_a\in\{\uparrow,\downarrow\}`$. Identify this basis vector with
@@ -42,8 +42,9 @@ This gives a unitary identification
 \qquad
 \mathcal W_m=(\mathbb C^2)^{\otimes m},
 }
-\tag{T1.1}
 ```
+
+**(T1.1)**
 
 with $`\mathcal W_0=\mathbb C`$. Write $`\mathcal F=\bigoplus_m\wedge^m\mathbb C^L`$ for the spinless charge Fock space, and let $`c_j`$ be its canonical fermionic annihilation operators. The one-particle hopping matrix and its second quantization are
 
@@ -54,8 +55,9 @@ h=J\sum_{j=1}^{L-1}
 \qquad
 H_{\mathrm{ch}}=\sum_{j,k=1}^{L}h_{jk}c_j^\dagger c_k.
 }
-\tag{T1.2}
 ```
+
+**(T1.2)**
 
 An allowed nearest-neighbor hop moves a particle into a vacancy without changing the order of the particles. The associated fermionic matrix element has positive sign because there is no occupied site between the source and destination. Consequently,
 
@@ -67,8 +69,9 @@ H
 \left(H_{\mathrm{ch}}\big|_{\wedge^m\mathbb C^L}\right)
 \otimes I_{\mathcal W_m}.
 }
-\tag{T1.3}
 ```
+
+**(T1.3)**
 
 The word is conserved by the bulk, while charge positions evolve under free hopping.
 
@@ -83,8 +86,9 @@ Let $`P_m`$ project onto total particle number $`m`$. Define the reduction
 \bigoplus_{m=0}^{L}
 \mathrm{Tr}_{\mathcal W_m}(P_m\rho P_m).
 }
-\tag{T1.4}
 ```
+
+**(T1.4)**
 
 The unitary identification in (T1.1) is understood in this formula. The map first discards cross-number blocks and then traces the word in each remaining block. It is completely positive and trace preserving, with number-diagonal output on $`\mathcal F`$. It allows arbitrary correlations between positions and spin words and arbitrary coherence between words of the same length.
 
@@ -104,8 +108,9 @@ For nonnegative, possibly time-dependent rates $`\alpha(t)`$ and $`\beta(t)`$, d
 +\alpha(t)\mathcal D[c_1^\dagger],
 \end{aligned}
 }
-\tag{T1.5}
 ```
+
+**(T1.5)**
 
 where $`a_s=|0\rangle\langle s|_1`$ and $`\mathcal D[b]\, (X)=bXb^\dagger-\{b^\dagger b,X\}/2`$.
 
@@ -115,8 +120,9 @@ where $`a_s=|0\rangle\langle s|_1`$ and $`\mathcal D[b]\, (X)=bXb^\dagger-\{b^\d
 {
 \mathcal C\mathcal L_t=\mathcal K_t\mathcal C.
 }
-\tag{T1.6}
 ```
+
+**(T1.6)**
 
 Thus $`\sigma(t)=\mathcal C(\rho(t))`$ obeys the exact charge master equation for every physical input. The statement holds for both injection and loss and for any bounded measurable choice of their rates.
 
@@ -127,8 +133,9 @@ To verify the jump terms, a particle at site $`1`$ is always the first particle 
 \mathcal C\left(\sum_s a_s\rho a_s^\dagger\right)
 =c_1\mathcal C(\rho)c_1^\dagger.
 }
-\tag{T1.7}
 ```
+
+**(T1.7)**
 
 Injection at an empty site $`1`$ acts as $`c_1^\dagger`$ on positions and prepends the selected letter. Each of the two injected letters has the same charge trace, so
 
@@ -137,8 +144,9 @@ Injection at an empty site $`1`$ acts as $`c_1^\dagger`$ on positions and prepen
 \mathcal C\left(\sum_s a_s^\dagger\rho a_s\right)
 =2c_1^\dagger\mathcal C(\rho)c_1.
 }
-\tag{T1.8}
 ```
+
+**(T1.8)**
 
 There is no endpoint fermionic string in either identity. The anticommutator terms follow from
 
@@ -148,8 +156,9 @@ There is no endpoint fermionic string in either identity. The anticommutator ter
 \qquad
 \sum_s a_sa_s^\dagger=2(I-n_1),
 }
-\tag{T1.9}
 ```
+
+**(T1.9)**
 
 where $`n_1`$ becomes $`c_1^\dagger c_1`$ on charge space. Equations (T1.7)–(T1.9) produce loss rate $`\beta`$ and total injection rate $`\alpha`$ in (T1.5).
 
@@ -162,8 +171,9 @@ For a number-diagonal input these identities follow directly block by block. To 
 e^{i\theta N}\rho e^{-i\theta N}\,d\theta
 =\sum_mP_m\rho P_m.
 }
-\tag{T1.10}
 ```
+
+**(T1.10)**
 
 Every number-diagonal charge observable has the same expectation before and after this twirl. In particular, total number, vacuum probability, and the probability that a specified set of sites is empty are exactly determined by $`\mathcal C(\rho(t))`$. The twirl is a mathematical reduction; the physical evolution retains its number coherences.
 
@@ -177,8 +187,9 @@ For a number-diagonal charge operator $`\sigma=\bigoplus_m\sigma_m`$, define
 =\bigoplus_{m=0}^{L}
 \sigma_m\otimes\frac{I_{\mathcal W_m}}{2^m}.
 }
-\tag{T1.11}
 ```
+
+**(T1.11)**
 
 This lift inserts a maximally mixed word, independently of the charge state within each number block. It satisfies
 
@@ -190,8 +201,9 @@ This lift inserts a maximally mixed word, independently of the charge state with
 \qquad
 \|\mathcal V(X)\|_1=\|X\|_1
 }
-\tag{T1.12}
 ```
+
+**(T1.12)**
 
 for number-diagonal $`X`$.
 
@@ -210,8 +222,9 @@ The vacuum and every product reservoir state $`\Pi_p`$ belong to this family. Mo
 =\bigoplus_{m=0}^{L}
 p^m(1-p)^{L-m}I_{\wedge^m\mathbb C^L}
 }
-\tag{T1.13}
 ```
+
+**(T1.13)**
 
 lifts to
 
@@ -223,8 +236,9 @@ lifts to
 \mathrm{diag}(1-p,p/2,p/2)
 =\Pi_p.
 }
-\tag{T1.14}
 ```
+
+**(T1.14)**
 
 An arbitrary physical state generally cannot be recovered by lifting its charge reduction. Equation (T1.12) reconstructs the full physical evolution only when its initial state is in the displayed invariant family.
 
@@ -236,8 +250,9 @@ Define the one-particle correlation matrix by
 {
 C_{jk}(t)=\mathrm{Tr}\!\left(\sigma(t)c_k^\dagger c_j\right).
 }
-\tag{T1.15}
 ```
+
+**(T1.15)**
 
 The canonical anticommutation relations imply $`0\leq C(t)\leq I`$ for every charge density operator. Applying $`\mathcal K_t^*`$ to the bilinears gives the closed equation
 
@@ -249,8 +264,9 @@ A_t=-ih-\frac{\alpha(t)+\beta(t)}2P_1,
 \qquad
 P_1=|1\rangle\langle1|.
 }
-\tag{T1.16}
 ```
+
+**(T1.16)**
 
 No Gaussian assumption is needed for this equation. The Hamiltonian contributes $`-i[h,C]`$, the two dissipators contribute $`-(\alpha+\beta)\{P_1,C\}/2`$, and injection contributes $`\alpha P_1`$.
 
@@ -262,8 +278,9 @@ C(t)=G(t,0)C(0)G(t,0)^\dagger
 +\int_0^t
 \alpha(s)G(t,s)P_1G(t,s)^\dagger\,ds.
 }
-\tag{T1.17}
 ```
+
+**(T1.17)**
 
 At fixed total rate $`\gamma=\alpha+\beta`$ and filling $`p=\alpha/\gamma`$, put
 
@@ -273,8 +290,9 @@ A_\gamma=-ih-\frac\gamma2P_1,
 \qquad
 G_\gamma(t)=e^{A_\gamma t}.
 }
-\tag{T1.18}
 ```
+
+**(T1.18)**
 
 Since $`A_\gamma+A_\gamma^\dagger=-\gamma P_1`$, (T1.17) reduces to
 
@@ -282,8 +300,9 @@ Since $`A_\gamma+A_\gamma^\dagger=-\gamma P_1`$, (T1.17) reduces to
 {
 C(t)=pI+G_\gamma(t)[C(0)-pI]G_\gamma(t)^\dagger.
 }
-\tag{T1.19}
 ```
+
+**(T1.19)**
 
 The drift depends on the total rate $`\gamma`$, not separately on the filling $`p`$. In particular, the same $`G_\gamma`$ describes the drain and refill stages when $`\gamma`$ is held fixed.
 
@@ -296,8 +315,9 @@ Gaussianity is needed to reconstruct higher correlations from $`C`$, but it is u
 \Pr(\text{all sites in }B\text{ empty})
 =\det(I_B-C_B),
 }
-\tag{T1.20}
 ```
+
+**(T1.20)**
 
 where $`C_B`$ is the principal submatrix. The fully occupied all-up physical input reduces to the filled Slater state with $`C(0)=I`$. Its charge state remains Gaussian even though its physical spin word is not maximally mixed. This is the specific use of (T1.20) in the [reservoir-floor converse](reservoir_threshold.md).
 
@@ -313,8 +333,9 @@ C(t)=G_\gamma(t)C(0)G_\gamma(t)^\dagger,
 =\mathrm{Tr}C(t)
 \leq f_\gamma(t),
 }
-\tag{T1.21}
 ```
+
+**(T1.21)**
 
 where
 
@@ -323,8 +344,9 @@ where
 f_\gamma(t)
 =\mathrm{Tr}\!\left(G_\gamma(t)^\dagger G_\gamma(t)\right).
 }
-\tag{T1.22}
 ```
+
+**(T1.22)**
 
 Because $`I-P_{\mathrm{vac}}\leq N`$,
 
@@ -333,8 +355,9 @@ Because $`I-P_{\mathrm{vac}}\leq N`$,
 1-\mathrm{Tr}\!\left(P_{\mathrm{vac}}E_{0,t}(\rho)\right)
 \leq f_\gamma(t)
 }
-\tag{T1.23}
 ```
+
+**(T1.23)**
 
 for every physical input $`\rho`$. This includes non-Gaussian states, spin-charge correlations, and number coherences. Applied to the system marginal of any joint system-reference input, it gives the same bound with an arbitrary idle reference.
 
@@ -348,8 +371,9 @@ X_\gamma
 =\int_0^\infty
 G_\gamma(t)^\dagger G_\gamma(t)\,dt.
 }
-\tag{T2.1}
 ```
+
+**(T2.1)**
 
 The integral exists and is positive definite. Its exact entries and trace yield a time estimate without a spectral-eigenvector conditioning factor.
 
@@ -365,8 +389,9 @@ The integral exists and is positive definite. Its exact entries and trace yield 
 \qquad
 j,k\text{ have the same parity},
 }
-\tag{T2.2}
 ```
+
+**(T2.2)**
 
 ```math
 {
@@ -374,7 +399,7 @@ j,k\text{ have the same parity},
 =
 \dfrac{i(L+1-k)}{2J},
 \qquad
-j < k\text{ have opposite parity}.
+j \lt k\text{ have opposite parity}.
 }
 ```
 
@@ -387,8 +412,9 @@ T_L(\gamma):=\mathrm{Tr}X_\gamma
 \frac{L(L+1)(L+2)}{6\gamma}
 +\frac{\gamma L(L^2-1)}{24J^2}.
 }
-\tag{T2.3}
 ```
+
+**(T2.3)**
 
 For every integer $`m\geq1`$,
 
@@ -396,8 +422,9 @@ For every integer $`m\geq1`$,
 {
 f_\gamma\!\left(2mT_L(\gamma)\right)\leq2^{-m}.
 }
-\tag{T2.4}
 ```
+
+**(T2.4)**
 
 At fixed $`J,\gamma>0`$, the time $`T_L(\gamma)`$ is $`\Theta(L^3)`$.
 
@@ -411,8 +438,9 @@ If $`A_\gamma v=\lambda v`$, dissipativity gives
 =v^\dagger(A_\gamma+A_\gamma^\dagger)v
 =-\gamma|v_1|^2.
 }
-\tag{T2.5}
 ```
+
+**(T2.5)**
 
 Every eigenvalue has nonpositive real part. If one had zero real part, then $`v_1=0`$. The first row of the eigenvector equation gives $`v_2=0`$, and the nearest-neighbor recurrence forces all remaining components to vanish. Hence $`A_\gamma`$ is Hurwitz: every eigenvalue has strictly negative real part.
 
@@ -422,8 +450,9 @@ It follows that $`G_\gamma(t)\to0`$ exponentially in finite dimension and that t
 {
 A_\gamma^\dagger X_\gamma+X_\gamma A_\gamma=-I.
 }
-\tag{T2.6}
 ```
+
+**(T2.6)**
 
 This Lyapunov equation has a unique solution. Indeed, if $`A_\gamma^\dagger Y+YA_\gamma=0`$, then $`G_\gamma(t)^\dagger YG_\gamma(t)=Y`$ for all $`t`$, whose limit implies $`Y=0`$. Positivity of the integral is strict because $`G_\gamma(0)=I`$.
 
@@ -439,8 +468,9 @@ X_{j-1,k}+X_{j+1,k}-X_{j,k-1}-X_{j,k+1}
 -\frac\gamma2(\delta_{j1}+\delta_{k1})X_{jk}
 =-\delta_{jk}.
 }
-\tag{T2.7}
 ```
+
+**(T2.7)**
 
 To verify (T2.2), write
 
@@ -454,9 +484,9 @@ On the upper triangle the proposed same-parity entries are $`a_jy_k`$, and the o
 
 For diagonal entries with $`j>1`$, the difference $`y_j-y_{j+1}=1`$ makes the hopping term in (T2.7) equal to $`-1`$; this also holds at $`j=L`$ with $`y_{L+1}=0`$. At $`j=1`$, the hopping term is $`L-1`$ and the boundary term is $`-\gamma X_{11}=-L`$, again giving $`-1`$.
 
-For $`j<k`$ of the same parity with $`j>1`$, the hopping term vanishes because $`2y_k-y_{k-1}-y_{k+1}=0`$. At the boundary $`j=1`$, that term is $`y_k/2`$, canceled by $`-\gamma X_{1k}/2=-y_k/2`$.
+For $`j\lt k`$ of the same parity with $`j>1`$, the hopping term vanishes because $`2y_k-y_{k-1}-y_{k+1}=0`$. At the boundary $`j=1`$, that term is $`y_k/2`$, canceled by $`-\gamma X_{1k}/2=-y_k/2`$.
 
-For $`j<k`$ of opposite parity with $`j>1`$, both $`a_j`$ and $`y_k`$ are affine, so
+For $`j\lt k`$ of opposite parity with $`j>1`$, both $`a_j`$ and $`y_k`$ are affine, so
 
 ```math
 (a_{j-1}+a_{j+1})y_k
@@ -488,8 +518,9 @@ f_\gamma'(t)
 \qquad
 \int_0^\infty f_\gamma(t)\,dt=T_L(\gamma).
 }
-\tag{T2.8}
 ```
+
+**(T2.8)**
 
 Set $`\tau=2T_L(\gamma)`$. Monotonicity gives
 
@@ -501,8 +532,9 @@ Set $`\tau=2T_L(\gamma)`$. Monotonicity gives
 \qquad
 f_\gamma(\tau)\leq\frac12.
 }
-\tag{T2.9}
 ```
+
+**(T2.9)**
 
 Semigroup composition and the Frobenius-norm product inequality imply
 
@@ -517,8 +549,9 @@ f_\gamma(s+t)
 =f_\gamma(s)f_\gamma(t).
 \end{aligned}
 }
-\tag{T2.10}
 ```
+
+**(T2.10)**
 
 Iteration at the time $`\tau`$ proves (T2.4). The restriction $`m\geq1`$ matters: $`f_\gamma(0)=L`$. For the positive block times used in the erasure schedules, the estimate already controls the total expected surviving population, with no additional factor of $`L`$.
 

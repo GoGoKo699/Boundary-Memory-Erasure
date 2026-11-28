@@ -32,8 +32,9 @@ p_\downarrow(L,T)
 \leq J\int_0^T\|\rho_t\|_\infty\,dt.
 }
 }
-\tag{U1}
 ```
+
+**(U1)**
 
 The same inequality holds with simultaneous local Hamiltonian or local Lindblad control. It also holds for the reduced chain trajectory when a retained controller interacts only with site $`1`$. In that case all controller operations are included in the joint, unconditional trace-preserving evolution.
 
@@ -145,8 +146,9 @@ D\!\left(\rho_L(T),\frac{I_3}{3}\right)
 \geq \frac13-\frac{JT}{3^{L-1}}.
 }
 }
-\tag{U2}
 ```
+
+**(U2)**
 
 In particular, for $`0\leq\varepsilon<1/3`$, reaching local error at most $`\varepsilon`$ requires
 
@@ -157,8 +159,9 @@ T\geq\frac{3^{L-1}}{J}
 \left(\frac13-\varepsilon\right).
 }
 }
-\tag{U2a}
 ```
+
+**(U2a)**
 
 This is a uniform statement over the specified control class. The protocol may depend on $`L`$, $`T`$, and the known preparation $`\rho_0`$. Its endpoint strengths and pulse count need not obey a size-independent bound.
 

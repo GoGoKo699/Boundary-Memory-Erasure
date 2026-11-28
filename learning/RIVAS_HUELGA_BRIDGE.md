@@ -313,7 +313,7 @@ Here the memory observable is the **full-chain** rightmost-spin-up projector. It
 =-\log(1-p)
 ```
 
-for fixed $`0<p\leq2/3`$, fixed positive $`J,\gamma`$, and fixed $`0<\varepsilon<1/2`$. This concerns convergence to the bath's own $`\Pi_p`$.
+for fixed $`0\lt p\leq2/3`$, fixed positive $`J,\gamma`$, and fixed $`0<\varepsilon<1/2`$. This concerns convergence to the bath's own $`\Pi_p`$.
 
 The final-target question fixes the same $`H`$ and $`J>0`$, and allows time-dependent rates with $`0\leq\gamma(t)\leq\Gamma`$, where $`\Gamma>0`$ is independent of $`L`$. Whenever $`\gamma(t)>0`$, the filling obeys $`0\leq p_L\leq p(t)\leq2/3`$; intervals with both rates zero need no filling assignment. For the same all-up input, set $`Y=C-p_LI`$. Its equation is
 
@@ -361,14 +361,14 @@ At polynomial time, this requires an extensive decrease from the initial min-ent
 If the environment or retained memory starts independently, each actual prefix is a CPTP system map $`\Phi_t`$. Applying it to $`\rho_0\leq I/r`$ gives
 
 ```math
-\sup_{t\leq T}\log\|\Phi_t(I)\|_\infty
+\sup_{t\leq T}\log(\|\Phi_t(I)\|_\infty)
 \geq\log r-\log\frac{JT}{\delta}.
 ```
 
 For a specified **memoryless** sequence of endpoint channels, [R2](../science/resources.md#r2-accumulated-channel-budget) counts
 
 ```math
-b(\mathcal E)=\log\|\mathcal E(I)\|_\infty,
+b(\mathcal E)=\log(\|\mathcal E(I)\|_\infty),
 \qquad
 \sum_k b(\mathcal E_k)
 \geq\log r-\log\frac{JT}{\delta}.

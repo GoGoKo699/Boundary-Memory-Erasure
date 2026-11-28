@@ -36,7 +36,7 @@ Fix the error independently of $`L`$ and keep $`J`$ and the allowed rate scale f
 | $`0`$ | $`1`$ | Ideal one-switch erasure has an $`O(L^3)`$ upper bound |
 | $`a/L`$, fixed $`a>0`$ | $`e^{a+o(1)}`$ | Polynomial erasure is possible |
 | $`c\log L/L`$, fixed $`c>0`$ | $`L^{c+o(1)}`$ | Polynomial erasure is possible; the lower and upper powers need not match |
-| $`L^{-a}`$, fixed $`0<a<1`$ | $`\exp[(1+o(1))L^{1-a}]`$ | Every allowed schedule takes superpolynomial time |
+| $`L^{-a}`$, fixed $`0\lt a\lt1`$ | $`\exp[(1+o(1))L^{1-a}]`$ | Every allowed schedule takes superpolynomial time |
 | Fixed $`p\in(0,2/3]`$ | $`\exp[-L\log(1-p)]`$ | Exponential time, with this exact leading exponent |
 
 For $`p_L=c\log L/L`$, the lower bound has scale $`L^{c+o(1)}`$ and the construction has scale $`L^{3+c+o(1)}`$ up to logarithmic factors. The theorem identifies the polynomial-time threshold without determining the optimal polynomial exponent. For an oscillatory sequence of floors, failure of the $`O(\log L)`$ condition excludes a uniform polynomial bound; growth faster than every polynomial along the entire sequence follows from the stronger limit $`Lp_L/\log L\to\infty`$.

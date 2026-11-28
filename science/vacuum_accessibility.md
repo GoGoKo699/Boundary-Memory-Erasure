@@ -11,7 +11,7 @@ The [model and conventions](model.md) fix the coherent Hamiltonian $`H`$, the en
 +\frac{\gamma p}{2}\sum_{s=\uparrow,\downarrow}\mathcal D[a_s^\dagger].
 ```
 
-Here $`J,\gamma>0`$, $`0<p\leq 2/3`$, the total injection rate is $`\alpha=\gamma p`$, and the loss rate of an occupied spin is $`\beta=\gamma(1-p)`$. Write $`E_{p,t}=e^{t\mathcal L_{H,p}}`$, $`N`$ for the particle-number operator, and $`P_{\mathrm{vac}}=|\mathrm{vac}\rangle\langle\mathrm{vac}|`$.
+Here $`J,\gamma>0`$, $`0\lt p\leq 2/3`$, the total injection rate is $`\alpha=\gamma p`$, and the loss rate of an occupied spin is $`\beta=\gamma(1-p)`$. Write $`E_{p,t}=e^{t\mathcal L_{H,p}}`$, $`N`$ for the particle-number operator, and $`P_{\mathrm{vac}}=|\mathrm{vac}\rangle\langle\mathrm{vac}|`$.
 
 The charge propagator and its survival integral, derived in [charge transport](charge_transport.md), are
 
@@ -41,8 +41,9 @@ For every $`t\geq0`$, the exact minimum eigenvalue of the physical vacuum effect
 =(1-p)^L\det\!\left[I-G_\gamma(t)^\dagger G_\gamma(t)\right].
 }
 }
-\tag{V1}
 ```
+
+**(V1)**
 
 In particular, with
 

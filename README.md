@@ -70,7 +70,7 @@ where $`\rho_L(T)`$ is the last-site marginal and $`D`$ is half trace distance. 
 O\!\left(L^3[1+\log(1/\varepsilon)]\right).
 ```
 
-For a constant reservoir with fixed filling $`0<p\leq2/3`$, convergence to its own product stationary state $`\Pi_p`$ has the exact leading exponent
+For a constant reservoir with fixed filling $`0\lt p\leq2/3`$, convergence to its own product stationary state $`\Pi_p`$ has the exact leading exponent
 
 ```math
 \lim_{L\to\infty}\frac1L
