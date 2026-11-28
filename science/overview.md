@@ -12,7 +12,7 @@ Fix the model and distance convention in [model.md](model.md). Let $`J`$ and the
 |---|---|---|
 | Exponential local-memory obstruction | Every sequence of unital operations on site 1; one fixed product input; a far-end population witness | [Control obstruction](control_obstruction.md) |
 | Universal erasure in $`O(L^3[1+\log(1/\varepsilon)])`$ | Pure particle loss followed once by the unbiased reservoir; arbitrary unknown input and reference | [Erasure protocol](erasure_protocol.md) |
-| Mixing exponent $`-\log(1-p)`$ | Constant filling $`0<p\leq2/3`$, fixed $`0<\varepsilon<1/2`$, full coherent channel | [Reservoir threshold](reservoir_threshold.md) |
+| Mixing exponent $`-\log(1-p)`$ | Constant filling $`0\lt p\leq2/3`$, fixed $`0<\varepsilon<1/2`$, full coherent channel | [Reservoir threshold](reservoir_threshold.md) |
 | Polynomial erasure iff $`Lp_L=O(\log L)`$ | Open-loop spin-independent gain/loss schedules with filling floor $`p_L\in[0,2/3]`$ and bounded rates | [Reservoir threshold](reservoir_threshold.md) |
 | Necessary temporary min-entropy reduction and finite-controller cost | The explicitly specified endpoint-map and controller models | [Resources](resources.md) |
 

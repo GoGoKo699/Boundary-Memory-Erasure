@@ -24,6 +24,14 @@ Lp_L=O(\log L).
 
 A fixed positive filling floor forces exponential time. A filling floor of order $`\log L/L`$ still allows a predetermined one-switch protocol. The proof controls the full quantum channel, including number coherences, spin–charge correlations, and entangled inputs.
 
+## Run the boundary drain and refill
+
+1. **Set the clock.** Start with the unknown state of the [qutrit chain](science/model.md#chain-and-fixed-hamiltonian). Each site is vacant or holds one particle with either spin. Keep the no-passing hopping and the total boundary rate fixed. Choose the target error and calculate both waiting times from the [explicit schedule](science/erasure_protocol.md#e1-ideal-erasure-theorem) before the run.
+2. **Drain at the left endpoint.** Leave the bulk hopping active. Couple site 1 to the pure-loss reservoir so either occupied spin leaves at rate γ and there is no injection. At the prescribed drain time, the chain is close to the vacuum and its correlations with an idle reference are small.
+3. **Refill at the preset time.** Switch site 1 to the unbiased bath. The loss rate is γ/3 for an occupied spin, and each spin enters a vacancy at rate γ/3. Keep the same hopping and total boundary rate. Use the preset times for both the switch and the end of refill. The controller neither tests the chain for vacancy nor conditions the run on an outcome.
+
+Return the entire chain. The joint output is within the chosen half-trace-distance error of the maximally mixed chain tensored with the unchanged reference marginal. The [two-site example](science/interpretation.md#a-two-site-calculation) gives the physical timing, and the [positive-filling schedule](science/reservoir_threshold.md#uniform-construction-with-one-reservoir-change) gives the distinct timing when the first reservoir cannot be set to pure loss.
+
 ## Read the science
 
 Start with the [scientific overview](science/overview.md) and [precise model](science/model.md). The [physical interpretation](science/interpretation.md) explains the memory mechanism, the filling regimes, and a complete two-site example.
@@ -62,7 +70,7 @@ where $`\rho_L(T)`$ is the last-site marginal and $`D`$ is half trace distance. 
 O\!\left(L^3[1+\log(1/\varepsilon)]\right).
 ```
 
-For a constant reservoir with fixed filling $`0<p\leq2/3`$, convergence to its own product stationary state $`\Pi_p`$ has the exact leading exponent
+For a constant reservoir with fixed filling $`0\lt p\leq2/3`$, convergence to its own product stationary state $`\Pi_p`$ has the exact leading exponent
 
 ```math
 \lim_{L\to\infty}\frac1L

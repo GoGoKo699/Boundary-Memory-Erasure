@@ -23,7 +23,7 @@ A uniform global erasure guarantee implies this condition, but the lower bounds 
 For a density matrix $`\rho`$ on dimension $`d`$, define its min-entropy and min-entropy deficit by
 
 ```math
-H_{\min}(\rho)=-\log\|\rho\|_\infty,
+H_{\min}(\rho)=-\log(\|\rho\|_\infty),
 \qquad
 P_\infty(\rho)=\log d-H_{\min}(\rho)
 =\log\bigl(d\|\rho\|_\infty\bigr).
@@ -40,8 +40,9 @@ P_\infty(\rho)=\log d-H_{\min}(\rho)
 \geq\frac{\delta}{JT}.
 }
 }
-\tag{R1}
 ```
+
+**(R1)**
 
 Equivalently,
 
@@ -115,12 +116,13 @@ Combining this with R1 yields
 ```math
 {
 \boxed{
-\sup_{0\leq t\leq T}\log\|\Phi_t(I_{d_S})\|_\infty
+\sup_{0\leq t\leq T}\log(\|\Phi_t(I_{d_S})\|_\infty)
 \geq(L-1)\log3-\log\frac{JT}{\delta}.
 }
 }
-\tag{R1a}
 ```
+
+**(R1a)**
 
 The target replacement channel $`\mathcal R_{I_{d_S}/d_S}`$ is unital. Nevertheless, a fast implementation must contain prefixes whose action on the identity has the large norm in R1a. This formulation measures a property of the actual prefixes without assigning a budget to a chosen decomposition into elementary channels.
 
@@ -129,7 +131,7 @@ The target replacement channel $`\mathcal R_{I_{d_S}/d_S}`$ is unital. Neverthel
 For a CPTP channel $`\mathcal E`$ with the same input and output dimension $`d`$, define
 
 ```math
-b(\mathcal E)=\log\|\mathcal E(I_d)\|_\infty.
+b(\mathcal E)=\log(\|\mathcal E(I_d)\|_\infty).
 ```
 
 Since $`\mathcal E(I_d)`$ is positive with trace $`d`$, its norm lies between $`1`$ and $`d`$. Thus $`0\leq b(\mathcal E)\leq\log d`$, and $`b(\mathcal E)=0`$ exactly when $`\mathcal E`$ is unital.
@@ -148,8 +150,9 @@ Local randomization to error $`\varepsilon`$ requires
 B(T)\geq(L-1)\log3-\log\frac{JT}{\delta}.
 }
 }
-\tag{R2}
 ```
+
+**(R2)**
 
 The bound is necessary; it is not a sufficient criterion for fast erasure.
 
@@ -328,8 +331,9 @@ T K\|\sigma_C\|_\infty
 \geq\frac{3^{L-1}}{J}\left(\frac13-\varepsilon\right).
 }
 }
-\tag{R3}
 ```
+
+**(R3)**
 
 Equivalently, since
 $`D_{\max}(\sigma_C\Vert I_C/K)=\log(K\|\sigma_C\|_\infty)`$,

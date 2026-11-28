@@ -11,7 +11,7 @@ Let $`\mathcal H=\bigoplus_{m=0}^L\mathcal H_m`$ be a finite-dimensional Hilbert
 1. The charge spectrum is contained in the nonnegative integers $`0,\ldots,L`$, and $`\mathcal H_0`$ is one-dimensional, with projector $`P_{\mathrm{vac}}`$.
 2. $`E`$ is a CPTP channel covariant under $`U_\theta=e^{i\theta N}`$: $`E(U_\theta XU_\theta^\dagger)=U_\theta E(X)U_\theta^\dagger`$.
 3. $`E`$ has a stationary state $`\Pi`$ satisfying $`[N,\Pi]=0`$.
-4. For some $`0<q\leq1`$, its vacuum effect satisfies $`E^*(P_{\mathrm{vac}})\geq qI`$.
+4. For some $`0\lt q\leq1`$, its vacuum effect satisfies $`E^*(P_{\mathrm{vac}})\geq qI`$.
 
 Then for every integer $`n\geq1`$,
 
@@ -23,12 +23,13 @@ Then for every integer $`n\geq1`$,
 \leq(L+1)e^{-qn/2}.
 }
 }
-\tag{M1}
 ```
+
+**(M1)**
 
 The rank-one vacuum and the finite nonnegative charge spectrum are explicit hypotheses. They supply, respectively, a replacement-channel component and a bound on the number of coherence sectors. A larger zero-charge subspace does not automatically give this conclusion.
 
-If $`q=1`$, every output has support on the one-dimensional vacuum space, so $`E=\mathcal R_{P_{\mathrm{vac}}}`$ and $`\Pi=P_{\mathrm{vac}}`$. The proof below addresses $`0<q<1`$.
+If $`q=1`$, every output has support on the one-dimensional vacuum space, so $`E=\mathcal R_{P_{\mathrm{vac}}}`$ and $`\Pi=P_{\mathrm{vac}}`$. The proof below addresses $`0\lt q\lt1`$.
 
 ## Number-diagonal component
 

@@ -29,7 +29,7 @@ t_{\mathrm{mix}}^{\diamond}(\varepsilon;p,L)
 \frac12\|E_{p,t}-\mathcal R_{\Pi_p}\|_\diamond\leq\varepsilon\right\}.
 ```
 
-For every $`0<p\leq2/3`$,
+For every $`0\lt p\leq2/3`$,
 
 ```math
 \frac{[1+(1-p)^L]/2-\varepsilon}{\gamma(1-p)^L}
@@ -59,8 +59,9 @@ Consequently, for fixed $`p\in(0,2/3]`$ and fixed $`J,\gamma>0`$,
 =-\log(1-p).
 }
 }
-\tag{F1}
 ```
+
+**(F1)**
 
 At the unbiased filling $`p=2/3`$, the leading exponent is $`\log3`$. The theorem determines the exponential rate; its upper and lower polynomial prefactors differ.
 
@@ -168,8 +169,9 @@ L\log\frac1{1-p_L}=O(\log L)
 Lp_L=O(\log L).
 }
 }
-\tag{F2}
 ```
+
+**(F2)**
 
 The constructive schedule uses a constant reservoir at filling $`p_L`$ followed by a predetermined change to filling $`2/3`$, with a fixed total rate throughout. It erases every input, including correlations with a reference. No knowledge of the input is used to choose the switch time.
 
@@ -278,7 +280,7 @@ The equality between a replacement-channel difference's half-diamond norm and th
 
 For $`p_L=0`$, the [ideal drain/refill protocol](erasure_protocol.md) supplies the stronger bound $`O(L^3[1+\log(1/\varepsilon)])`$. For $`p_L=2/3`$, the two reservoir fillings coincide, and a single constant bath suffices.
 
-For general $`0<p_L\leq2/3`$, the construction takes
+For general $`0\lt p_L\leq2/3`$, the construction takes
 
 ```math
 O\!\left(L^3(1-p_L)^{-L}\log\frac{L+1}{\varepsilon}
