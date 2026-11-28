@@ -116,7 +116,7 @@ Combining this with R1 yields
 ```math
 {
 \boxed{
-\sup_{0\leq t\leq T}\log\|\Phi_t(I_{d_S})\|_\infty
+\sup_{0\leq t\leq T}\log(\|\Phi_t(I_{d_S})\|_\infty)
 \geq(L-1)\log3-\log\frac{JT}{\delta}.
 }
 }
