@@ -3,7 +3,8 @@ set -euo pipefail
 
 collector="$GITHUB_WORKSPACE/verification/hosted_math/capture_hosted_math.cjs"
 previous=""
-for attempt in 1 2 3; do
+max_attempts=8
+for ((attempt=1; attempt<=max_attempts; attempt++)); do
   output="$RUNNER_TEMP/hosted-math-attempt-$attempt"
   resume=()
   if [[ -n "$previous" ]]; then
@@ -15,7 +16,7 @@ for attempt in 1 2 3; do
   else
     status=$?
   fi
-  if [[ "$attempt" == 3 ]]; then
+  if [[ "$attempt" == "$max_attempts" ]]; then
     exit "$status"
   fi
   if ! python3 - "$output" "$GITHUB_REPOSITORY" "$CAPTURE_REVISION" <<'PY'
